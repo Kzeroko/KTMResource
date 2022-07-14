@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "ktmresource:blackwyrm_dragon_crystal",
+    "ktmresource:crystallite_dragon_crystal",
+    "ktmresource:electro_dragon_crystal",
+    "ktmresource:ender_dragon_crystal",
+    "ktmresource:fire_dragon_crystal",
+    "ktmresource:ice_dragon_crystal",
+    "ktmresource:whitewyrm_dragon_crystal"
+  ]
+}

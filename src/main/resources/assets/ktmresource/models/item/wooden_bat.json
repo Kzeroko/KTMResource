@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "ktmresource:item/weapons/wooden_bat"
+  }
+}

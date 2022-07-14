@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "ktmresource:cyadia_ingot",
+    "ktmresource:greendux_ingot",
+    "ktmresource:indigo_ingot",
+    "ktmresource:mountsakura_ingot",
+    "ktmresource:neptunium_ingot",
+    "ktmresource:radialime_ingot",
+    "ktmresource:rediron_ingot",
+    "ktmresource:shineblazing_ingot"
+  ]
+}

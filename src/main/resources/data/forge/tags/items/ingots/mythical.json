@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "ktmresource:adamantite_ingot",
+    "ktmresource:crimsongold_ingot",
+    "ktmresource:damascussteel_ingot",
+    "ktmresource:demonsteel_ingot",
+    "ktmresource:mythril_ingot",
+    "ktmresource:orichalcum_ingot",
+    "ktmresource:vibranium_ingot"
+  ]
+}

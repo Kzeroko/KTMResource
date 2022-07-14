@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "ktmresource:dimcopper_ingot",
+    "ktmresource:energize_ingot",
+    "ktmresource:firegem_ingot",
+    "ktmresource:knightlygold_ingot",
+    "ktmresource:leafium_ingot",
+    "ktmresource:liquidize_ingot",
+    "ktmresource:obsidium_ingot",
+    "ktmresource:primalsteel_ingot",
+    "ktmresource:primalwarlock_ingot",
+    "ktmresource:sanguine_ingot",
+    "ktmresource:starforged_ingot",
+    "ktmresource:unpowered_ingot"
+  ]
+}

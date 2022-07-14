@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ktmresource:item/starforged_heart"
+  }
+}

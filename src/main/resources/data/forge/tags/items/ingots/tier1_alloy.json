@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "ktmresource:cyberium_ingot",
+    "ktmresource:empoweredleafium_ingot",
+    "ktmresource:energyinfused_ingot",
+    "ktmresource:extremedimensional_ingot",
+    "ktmresource:glowcomplexity_ingot",
+    "ktmresource:kingdomgold_ingot",
+    "ktmresource:manainfused_ingot",
+    "ktmresource:ultimateamethyst_ingot"
+  ]
+}
