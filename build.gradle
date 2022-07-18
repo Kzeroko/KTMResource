@@ -17,7 +17,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 
-version = '0.07b-1.18.2'
+version = '1.18.2-0.07b'
 group = 'net.kzeroko.ktmresource' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'ktmresource'
 
