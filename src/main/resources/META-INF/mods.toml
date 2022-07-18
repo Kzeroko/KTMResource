@@ -23,7 +23,7 @@ Interesting Fact: KTM=KenToMahou
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.ktmresource]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.18.2,1.19)"

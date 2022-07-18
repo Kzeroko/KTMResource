@@ -2,18 +2,18 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "ktmresource:item/weapons/black_sword"
+		"layer0": "ktmresource:item/weapons/bluerose_sword"
 	},
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [-45, -90, 0],
-			"translation": [0, 8.25, 1],
-			"scale": [1.2, 1.2, 0.5]
+			"translation": [0, 8.5, 1],
+			"scale": [1.25, 1.25, 0.5]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [-45, 90, 0],
-			"translation": [0, 8.25, 1],
-			"scale": [1.2, 1.2, 0.5]
+			"translation": [0, 8.5, 1],
+			"scale": [1.25, 1.25, 0.5]
 		},
 		"firstperson_righthand": {
 			"rotation": [-90, -90, -35],
@@ -36,7 +36,7 @@
 		},
 		"head": {
 			"rotation": [-180, 0, -45],
-			"translation": [-1.25, 7.5, 0],
+			"translation": [-1, 7, 0],
 			"scale": [1.5, 1.5, 0.5]
 		},
 		"fixed": {

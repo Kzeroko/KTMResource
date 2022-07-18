@@ -2,17 +2,17 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "ktmresource:item/weapons/black_sword"
+		"layer0": "ktmresource:item/weapons/anneal_blade"
 	},
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [-45, -90, 0],
-			"translation": [0, 8.25, 1],
+			"translation": [0, 7.5, 1],
 			"scale": [1.2, 1.2, 0.5]
 		},
 		"thirdperson_lefthand": {
 			"rotation": [-45, 90, 0],
-			"translation": [0, 8.25, 1],
+			"translation": [0, 7.5, 1],
 			"scale": [1.2, 1.2, 0.5]
 		},
 		"firstperson_righthand": {

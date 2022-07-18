@@ -7,7 +7,7 @@ public class KtmItemTab {
 
     public static final CreativeModeTab KTMWEAPONS = new CreativeModeTab("ktmweaponsTab") {
         @Override
-        public ItemStack makeIcon() { return new ItemStack(KtmItems.EXCALIBUR_KAI.get());
+        public ItemStack makeIcon() { return new ItemStack(KtmItems.ANNEAL_BLADE.get());
         }
     };
 

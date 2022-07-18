@@ -13,10 +13,6 @@ public class KtmItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, KTMResource.MOD_ID);
 
-    // I don't know what I'm doing
-    // public static final RegistryObject<Item> TESTITEM = ITEMS.register("testitem",
-            // ()-> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-
     // Weapons - wooden
 
     public static final RegistryObject<Item> WOODEN_BAT = ITEMS.register("wooden_bat",
@@ -68,7 +64,23 @@ public class KtmItems {
     // Weapons - SAO
 
     public static final RegistryObject<Item> BLACK_SWORD = ITEMS.register("black_sword",
-            () -> new SwordItem(KtmItemTier.BLACKWYRM, 2, -2.5f,
+            () -> new BlackSword(KtmItemTier.ELITE, -1, -2.5f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
+
+    public static final RegistryObject<Item> BLACKIRON_GREATSWORD = ITEMS.register("blackiron_greatsword",
+            () -> new BlackironGreatsword(KtmItemTier.ELITE, 0, -3.0f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
+
+    public static final RegistryObject<Item> BLUE_LONGSWORD = ITEMS.register("blue_longsword",
+            () -> new BlueLongsword(KtmItemTier.ELITE, -5, -2.7f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
+
+    public static final RegistryObject<Item> ANNEAL_BLADE = ITEMS.register("anneal_blade",
+            () -> new AnnealBlade(KtmItemTier.ELITE, -7, -2.7f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
+
+    public static final RegistryObject<Item> BLUEROSE_SWORD = ITEMS.register("bluerose_sword",
+            () -> new BlueroseSword(KtmItemTier.LEGENDARY, -15, -2.6f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
 
     // Weapons - another
@@ -105,6 +117,12 @@ public class KtmItems {
 
     public static final RegistryObject<Item> EXCALIBUR_KAI = ITEMS.register("excalibur_kai",
             () -> new ExcaliburKai(KtmItemTier.LEGENDARY, -11, -2.5f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
+
+    // Weapons - mythic
+
+    public static final RegistryObject<Item> THEBLADEOFGOLDEN = ITEMS.register("thebladeofgolden",
+            () -> new ThebladeofGolden(KtmItemTier.MYTHICAL, -6, -2.8f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
 
     // Misc Resource Items
@@ -162,6 +180,15 @@ public class KtmItems {
 
     public static final RegistryObject<Item> STARFORGED_HEART = ITEMS.register("starforged_heart",
             () -> new StarforgedHeart(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> ETERNAL_STONE = ITEMS.register("eternal_stone",
+            () -> new EternalStone(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(KtmItemRarity.FORBIDDEN)));
+
+    public static final RegistryObject<Item> BLOODSTONE = ITEMS.register("bloodstone",
+            () -> new Bloodstone(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(KtmItemRarity.MONSTROUS)));
+
+    public static final RegistryObject<Item> TOKEN_OFADVENTURER = ITEMS.register("token_ofadventurer",
+            () -> new TokenofAdventurer(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(Rarity.EPIC)));
 
     // Repair Kits
 
