@@ -92,11 +92,11 @@ public class KtmItems {
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
 
     public static final RegistryObject<Item> ELUCIDATOR = ITEMS.register("elucidator",
-            () -> new Elucidator(KtmItemTier.ELITEPLUS, 5, -2.3f,
+            () -> new Elucidator(KtmItemTier.ELITEPLUS, 5, -2.4f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.CUSTOMIZE)));
 
     public static final RegistryObject<Item> DARK_REPULSER = ITEMS.register("dark_repulser",
-            () -> new DarkRepulser(KtmItemTier.ELITEPLUS, 3, -2.3f,
+            () -> new DarkRepulser(KtmItemTier.ELITEPLUS, 3, -2.4f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.OUTER)));
 
     public static final RegistryObject<Item> EBON_DAGGER = ITEMS.register("ebon_dagger",
