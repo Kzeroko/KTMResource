@@ -11,6 +11,7 @@ public enum KtmItemTier implements Tier {
     BASIC(0, 150, 0f, 4f, 15, () -> Ingredient.EMPTY),
     ADVANCED(0, 1400, 0f, 10f, 15, () -> Ingredient.of(KtmItems.ADVANCED_REPAIRKIT.get())),
     ELITE(0, 1200, 0f, 15f, 15, () -> Ingredient.of(KtmItems.ADVANCED_REPAIRKIT.get())),
+    ELITEPLUS(0, 1500, 0f, 15f, 15, () -> Ingredient.of(KtmItems.ADVANCED_REPAIRKIT.get())),
     BLACKWYRM(0, 2000, 0f, 14f, 15, () -> Ingredient.of(KtmItems.ENDER_REPAIRKIT.get())),
     WHITEWYRM(0, 2200, 0f, 13f, 15, () -> Ingredient.of(KtmItems.ENDER_REPAIRKIT.get())),
     ANOTHER(0, 2800, 0f, 20f, 17, () -> Ingredient.of(KtmItems.ALIEN_REPAIRKIT.get())),

@@ -11,4 +11,7 @@ public class KtmItemRarity {
     public static final Rarity MONSTROUS = Rarity.create("monstrous", ChatFormatting.LIGHT_PURPLE);
     public static final Rarity VENOMOUS = Rarity.create("venomous", ChatFormatting.GREEN);
     public static final Rarity ADVANCED = Rarity.create("advanced", ChatFormatting.YELLOW);
+    public static final Rarity DARKNESS = Rarity.create("darkness", ChatFormatting.DARK_PURPLE);
+    public static final Rarity RITUAL = Rarity.create("ritual", ChatFormatting.DARK_RED);
+    public static final Rarity CUSTOMIZE = Rarity.create("ritual", ChatFormatting.GRAY);
 }
