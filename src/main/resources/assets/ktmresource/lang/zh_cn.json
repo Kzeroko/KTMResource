@@ -202,9 +202,9 @@
   "item.ktmresource.activator_d": "四阶助融石",
   "item.ktmresource.activator_e": "五阶助融石",
 
-  "item.ktmresource.activator_a.tooltip": "§d助融石 等阶-1",
-  "item.ktmresource.activator_b.tooltip": "§d助融石 等阶-2",
-  "item.ktmresource.activator_c.tooltip": "§d助融石 等阶-3",
-  "item.ktmresource.activator_d.tooltip": "§d助融石 等阶-4",
-  "item.ktmresource.activator_e.tooltip": "§d助融石 等阶-5"
+  "item.ktmresource.activator_a.tooltip": "§d助融石 等阶-不凡",
+  "item.ktmresource.activator_b.tooltip": "§d助融石 等阶-稀有",
+  "item.ktmresource.activator_c.tooltip": "§d助融石 等阶-史诗",
+  "item.ktmresource.activator_d.tooltip": "§d助融石 等阶-传奇",
+  "item.ktmresource.activator_e.tooltip": "§d助融石 等阶-神话"
 }

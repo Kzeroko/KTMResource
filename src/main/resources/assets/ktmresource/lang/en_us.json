@@ -202,9 +202,9 @@
   "item.ktmresource.activator_d": "level 4 activator",
   "item.ktmresource.activator_e": "level 5 activator",
 
-  "item.ktmresource.activator_a.tooltip": "§dActivator level-1",
-  "item.ktmresource.activator_b.tooltip": "§dActivator level-2",
-  "item.ktmresource.activator_c.tooltip": "§dActivator level-3",
-  "item.ktmresource.activator_d.tooltip": "§dActivator level-4",
-  "item.ktmresource.activator_e.tooltip": "§dActivator level-5"
+  "item.ktmresource.activator_a.tooltip": "§dActivator Tier-Uncommon",
+  "item.ktmresource.activator_b.tooltip": "§dActivator Tier-Rare",
+  "item.ktmresource.activator_c.tooltip": "§dActivator Tier-Epic",
+  "item.ktmresource.activator_d.tooltip": "§dActivator Tier-Legendary",
+  "item.ktmresource.activator_e.tooltip": "§dActivator Tier-Mythic"
 }
