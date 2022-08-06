@@ -54,7 +54,7 @@ public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceCont
 
         if (this.menu.isForgeActive()) {
             int k = this.menu.getForgeTimeScaled();
-            this.blit(matrixStack, i + 60 + k, Math.min(j + 33 + k, j + 49), 176 + k,  Math.min(k, 16), 56 - (2 * k), Math.max(36 - (2 * k), 3));
+            this.blit(matrixStack, i + 20, j + 60 - (int) Math.floor(k*36/20), 185,  36-(int) Math.floor(k*36/20), 3, (int) Math.floor((k*36/20)));
         }
     }
 
