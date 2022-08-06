@@ -56,12 +56,7 @@ public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceCont
 
     public void render(PoseStack matrixStack, int mouseX, int mouseY, float partialTicks) {
         this.renderBackground(matrixStack);
-        if (this.widthTooNarrowIn) {
-            this.renderBg(matrixStack, partialTicks, mouseX, mouseY);
-        } else {
-            super.render(matrixStack, mouseX, mouseY, partialTicks);
-        }
-
+        super.render(matrixStack, mouseX, mouseY, partialTicks);
         this.renderTooltip(matrixStack, mouseX, mouseY);
     }
 
