@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ktmresource:activator_a",
+    "ktmresource:activator_b",
+    "ktmresource:activator_c",
+    "ktmresource:activator_d",
+    "ktmresource:activator_e"
+  ]
+}

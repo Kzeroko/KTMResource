@@ -172,7 +172,7 @@
   "desc.ktmresource.soul_harvester": "——The magical sickle that has been consecrated by the soul, even if it is composed of undead souls, there isn't any sense of the evil energy within it...",
   "desc.ktmresource.excalibur_kai": "——The replica of the Excalibur is by the feat of technology and sorcery. To some extent this replica overpowers its origin, but its potential has not yet been fully tapped",
   "desc.ktmresource.bloodthirst_dagger": "——A metal knife that gnaws at the flesh of the enemy. The magical substance attached to it makes this weapon oddly light in weight, which results only swifty users can unleash its potential",
-  "desc.ktmresource.unmovable_dawnlight": "——「You can call me Unmovable Twilight」 ——a peculiar shaped long sword that synchronizes with the user's soul. It is said that when the sword breaks, the sword owner will lose consciousness",
+  "desc.ktmresource.unmovable_dawnlight": "——「You can call me Unmovable dawnlight」 ——a peculiar shaped long sword that synchronizes with the user's soul. It is said that when the sword breaks, the sword owner will lose consciousness",
   "desc.ktmresource.maniacal_dusk": "——「The sunless dusk declares your death」——a seemingly cumbersome weapon, in the hands of 'The Slaughterer' is a killing blade that combines agility and damage, its edge reveals a ruthless cold light",
   "desc.ktmresource.black_sword": "——As a prototype of an unknown weapon, this sword has very stable stats. It is worth noting that due to the special material it is made of, the handle of this sword is thicker than any other common swords",
   "desc.ktmresource.blue_longsword": "——This longsword is not pure blue, its name comes from the rare sapphire gem in the center. The blade is forged from a diamond-like material, which makes the sword surprisingly tough",
@@ -189,5 +189,22 @@
   "itemGroup.ktmresourceTab": "KTM resource - Misc",
   "itemGroup.ktmingotsTab": "KTM resource - Ingots",
   "itemGroup.ktmbucketsTab": "KTM resource - Fluid Buckets",
-  "itemGroup.ktmweaponsTab": "KTM resource - Weapons"
+  "itemGroup.ktmweaponsTab": "KTM resource - Weapons",
+  "itemGroup.ktmblocksTab": "KTM resource - Blocks",
+
+  "ktmresource.jei.forging": "Forging",
+  "block.ktmresource.alloy_furnace": "Alloy Furnace",
+  "ktmresource:container.alloy_furnace": "Alloy Furnace",
+
+  "item.ktmresource.activator_a": "level 1 activator",
+  "item.ktmresource.activator_b": "level 2 activator",
+  "item.ktmresource.activator_c": "level 3 activator",
+  "item.ktmresource.activator_d": "level 4 activator",
+  "item.ktmresource.activator_e": "level 5 activator",
+
+  "item.ktmresource.activator_a.tooltip": "§dActivator level-1",
+  "item.ktmresource.activator_b.tooltip": "§dActivator level-2",
+  "item.ktmresource.activator_c.tooltip": "§dActivator level-3",
+  "item.ktmresource.activator_d.tooltip": "§dActivator level-4",
+  "item.ktmresource.activator_e.tooltip": "§dActivator level-5"
 }

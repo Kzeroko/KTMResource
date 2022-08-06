@@ -1,0 +1,35 @@
+{
+  "type": "ktmresource:forging_recipe",
+  "gems": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "catalysts": [
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "result": {
+    "item": "minecraft:diamond"
+  },
+  "forgingTime": 100
+}
