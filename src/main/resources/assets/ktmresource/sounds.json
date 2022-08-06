@@ -1,0 +1,26 @@
+{
+  "alloyfurnace.cook": {
+    "sounds": [
+      {
+        "name": "ktmresource:alloyfurnace/boil1",
+        "stream": true
+      },
+      {
+        "name": "ktmresource:alloyfurnace/boil2",
+        "stream": true
+      },
+      {
+        "name": "ktmresource:alloyfurnace/boil3",
+        "stream": true
+      },
+      {
+        "name": "ktmresource:alloyfurnace/boil4",
+        "stream": true
+      },
+      {
+        "name": "ktmresource:alloyfurnace/boil5",
+        "stream": true
+      }
+    ]
+  }
+}

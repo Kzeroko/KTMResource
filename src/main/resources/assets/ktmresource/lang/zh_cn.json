@@ -189,5 +189,22 @@
   "itemGroup.ktmresourceTab": "KTM 资源 - 杂项",
   "itemGroup.ktmingotsTab": "KTM 资源 - 金属锭",
   "itemGroup.ktmbucketsTab": "KTM 资源 - 液体与桶",
-  "itemGroup.ktmweaponsTab": "KTM 资源 - 武器"
+  "itemGroup.ktmweaponsTab": "KTM 资源 - 武器",
+  "itemGroup.ktmblocksTab": "KTM 资源 - 方块",
+
+  "ktmresource.jei.forging": "熔炼",
+  "block.ktmresource.alloy_furnace": "合金锻炉",
+  "ktmresource:container.alloy_furnace": "合金锻炉",
+
+  "item.ktmresource.activator_a": "一阶助融石",
+  "item.ktmresource.activator_b": "二阶助融石",
+  "item.ktmresource.activator_c": "三阶助融石",
+  "item.ktmresource.activator_d": "四阶助融石",
+  "item.ktmresource.activator_e": "五阶助融石",
+
+  "item.ktmresource.activator_a.tooltip": "§d助融石 等阶-1",
+  "item.ktmresource.activator_b.tooltip": "§d助融石 等阶-2",
+  "item.ktmresource.activator_c.tooltip": "§d助融石 等阶-3",
+  "item.ktmresource.activator_d.tooltip": "§d助融石 等阶-4",
+  "item.ktmresource.activator_e.tooltip": "§d助融石 等阶-5"
 }
