@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:iron_ingot",
+    "ktmresource:electro_dragon_crystal"
+  ]
+}

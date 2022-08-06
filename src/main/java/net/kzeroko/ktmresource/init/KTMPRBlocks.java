@@ -1,0 +1,77 @@
+/*
+ * Copyright 2022 Infernal Studios
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package net.kzeroko.ktmresource.init;
+
+import net.kzeroko.ktmresource.KTMResource;
+import net.kzeroko.ktmresource.blocks.AlloyFurnaceBlock;
+import net.kzeroko.ktmresource.fluids.KtmFluid;
+import net.kzeroko.ktmresource.items.KtmItemTab;
+import net.kzeroko.ktmresource.items.KtmItems;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Supplier;
+
+public class KTMPRBlocks {
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, KTMResource.MOD_ID);
+
+    // Fluid Blocks
+    public static final RegistryObject<LiquidBlock> BLAZING_SOUL = BLOCKS
+            .register("blazingsoul_block", () -> new LiquidBlock(KtmFluid.BLAZINGSOUL,
+                    Block.Properties.of(Material.LAVA).lightLevel((state) -> {	return 15;	}).randomTicks().strength(100.0F).noDrops()));
+
+    // BLOCKS
+    public static final RegistryObject<Block> ALLOY_FURNACE = registerBlockWithDefaultItem("alloy_furnace", () -> new AlloyFurnaceBlock(getProperties(Blocks.FURNACE)));
+
+    //*******************************************************************************************************************
+
+    public static BlockBehaviour.Properties getProperties(Material materialIn, float hardnessAndResistanceIn) {
+        return getProperties(materialIn, hardnessAndResistanceIn, hardnessAndResistanceIn);
+    }
+
+    public static BlockBehaviour.Properties getProperties(Material materialIn, float hardnessIn, float resistanceIn) {
+        return BlockBehaviour.Properties.of(materialIn).strength(hardnessIn, resistanceIn);
+    }
+
+    public static BlockBehaviour.Properties getProperties(Material materialIn) {
+        return BlockBehaviour.Properties.of(materialIn).instabreak();
+    }
+
+    public static BlockBehaviour.Properties getProperties(Block block) {
+        return BlockBehaviour.Properties.copy(block);
+    }
+
+    public static <T extends Block> RegistryObject<T> registerBlockWithDefaultItem(String name, Supplier<? extends T> blockSupplier) {
+        RegistryObject<T> block = BLOCKS.register(name, blockSupplier);
+        KtmItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(KtmItemTab.KTMRESOURCES)));
+        return block;
+    }
+
+    public static void register(IEventBus eventBus) {
+        BLOCKS.register(eventBus);
+        KTMResource.LOGGER.info("KTMResource: Blocks Registered!");
+    }
+}

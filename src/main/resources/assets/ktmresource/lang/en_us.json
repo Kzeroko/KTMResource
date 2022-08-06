@@ -161,5 +161,22 @@
   "itemGroup.ktmresourceTab": "KTM resource - Misc",
   "itemGroup.ktmingotsTab": "KTM resource - Ingots",
   "itemGroup.ktmbucketsTab": "KTM resource - Fluid Buckets",
-  "itemGroup.ktmweaponsTab": "KTM resource - Weapons"
+  "itemGroup.ktmweaponsTab": "KTM resource - Weapons",
+
+  "ktmresource.jei.forging": "Forging",
+  "block.ktmresource.alloy_furnace": "Alloy Furnace",
+  "ktmresource:container.alloy_furnace": "Alloy Furnace",
+
+  "item.ktmresource.activator_a": "level 1 activator",
+  "item.ktmresource.activator_b": "level 2 activator",
+  "item.ktmresource.activator_c": "level 3 activator",
+  "item.ktmresource.activator_d": "level 4 activator",
+  "item.ktmresource.activator_e": "level 5 activator",
+
+  "item.ktmresource.activator_a.tooltip": "\u00A7dActivators level-1",
+  "item.ktmresource.activator_b.tooltip": "\u00A7dActivators level-2",
+  "item.ktmresource.activator_c.tooltip": "\u00A7dActivators level-3",
+  "item.ktmresource.activator_d.tooltip": "\u00A7dActivators level-4",
+  "item.ktmresource.activator_e.tooltip": "\u00A7dActivators level-5"
+
 }
