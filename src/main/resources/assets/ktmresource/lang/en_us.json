@@ -196,11 +196,11 @@
   "block.ktmresource.alloy_furnace": "Alloy Furnace",
   "ktmresource:container.alloy_furnace": "Alloy Furnace",
 
-  "item.ktmresource.activator_a": "level 1 activator",
-  "item.ktmresource.activator_b": "level 2 activator",
-  "item.ktmresource.activator_c": "level 3 activator",
-  "item.ktmresource.activator_d": "level 4 activator",
-  "item.ktmresource.activator_e": "level 5 activator",
+  "item.ktmresource.activator_a": "Tier 1 activator",
+  "item.ktmresource.activator_b": "Tier 2 activator",
+  "item.ktmresource.activator_c": "Tier 3 activator",
+  "item.ktmresource.activator_d": "Tier 4 activator",
+  "item.ktmresource.activator_e": "Tier 5 activator",
 
   "item.ktmresource.activator_a.tooltip": "§dActivator Tier-Uncommon",
   "item.ktmresource.activator_b.tooltip": "§dActivator Tier-Rare",

@@ -5,6 +5,7 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.kzeroko.ktmresource.KTMResource;
 import net.kzeroko.ktmresource.containers.AlloyFurnaceContainer;
+import net.kzeroko.ktmresource.items.KtmItems;
 import net.kzeroko.ktmresource.network.KTMPRNetworkHandler;
 import net.kzeroko.ktmresource.network.UpdateAlloyFurnacePacket;
 import net.minecraft.client.Minecraft;
@@ -12,10 +13,12 @@ import net.minecraft.client.gui.components.AbstractButton;
 import net.minecraft.client.gui.narration.NarrationElementOutput;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
+import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.api.distmarker.Dist;
@@ -124,7 +127,6 @@ public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceCont
             this.active = this.screen.menu.isRecipeValid() && !this.screen.menu.isForgeActive();
 
             this.blit(matrixStack, this.x, this.y, j, i, this.width, this.height);
-            this.screen.itemRenderer.renderGuiItem(new ItemStack(Items.LAVA_BUCKET), this.x + 2, this.y + 2);
             this.renderIcon(matrixStack);
         }
 

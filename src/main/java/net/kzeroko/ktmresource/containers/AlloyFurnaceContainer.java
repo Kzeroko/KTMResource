@@ -38,14 +38,14 @@ public class AlloyFurnaceContainer extends RecipeBookMenu<Container> {
 
         // new materials slots
         this.addSlot(new MaterialsSlot(inventory, 0, 44, 17));
-        this.addSlot(new MaterialsSlot(inventory, 1, 62, 17));
-        this.addSlot(new MaterialsSlot(inventory, 2, 80, 17));
-        this.addSlot(new MaterialsSlot(inventory, 3, 98, 17));
-        this.addSlot(new MaterialsSlot(inventory, 4, 116, 17));
+        this.addSlot(new MaterialsSlot(inventory, 1, 61, 17));
+        this.addSlot(new MaterialsSlot(inventory, 2, 78, 17));
+        this.addSlot(new MaterialsSlot(inventory, 3, 95, 17));
+        this.addSlot(new MaterialsSlot(inventory, 4, 112, 17));
         // new fuels slots
         this.addSlot(new FuelsSlot(inventory, 5, 46, 43)); //35
-        this.addSlot(new FuelsSlot(inventory, 6, 64, 43));
-        this.addSlot(new FuelsSlot(inventory, 7, 82, 43));
+        this.addSlot(new FuelsSlot(inventory, 6, 63, 43));
+        this.addSlot(new FuelsSlot(inventory, 7, 80, 43));
         // new tools slot
         this.addSlot(new ActivatorsSlot(inventory, 8, 114, 43));
         // new output slot
