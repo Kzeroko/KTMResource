@@ -4,7 +4,6 @@ import net.kzeroko.ktmresource.client.gui.screen.inventory.AlloyFurnaceScreen;
 import net.kzeroko.ktmresource.init.KTMPRBlocks;
 import net.kzeroko.ktmresource.init.KTMPRContainerTypes;
 import net.kzeroko.ktmresource.init.KTMPRRecipes;
-import net.kzeroko.ktmresource.items.KtmItems;
 import net.minecraft.client.RecipeBookCategories;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.ItemStack;
