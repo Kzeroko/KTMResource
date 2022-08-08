@@ -1,6 +1,6 @@
 package net.kzeroko.ktmresource.blocks;
 
-
+import net.kzeroko.ktmresource.init.KTMPRBlocks;
 import net.kzeroko.ktmresource.init.KTMPRTileEntityTypes;
 import net.kzeroko.ktmresource.tileentities.AlloyFurnaceTileEntity;
 import net.minecraft.core.BlockPos;
@@ -9,15 +9,13 @@ import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.BaseEntityBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
-import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -26,7 +24,6 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.BlockHitResult;
 
 import javax.annotation.Nullable;
@@ -37,7 +34,7 @@ public class AlloyFurnaceBlock extends BaseEntityBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
     public AlloyFurnaceBlock(Properties properties) {
-        super(properties.strength(.1f));
+        super(properties.strength(.2f));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(LIT, false));
     }
 
@@ -61,7 +58,6 @@ public class AlloyFurnaceBlock extends BaseEntityBlock {
                 ((AlloyFurnaceTileEntity)tileentity).setCustomName(stack.getHoverName());
             }
         }
-
     }
 
     @SuppressWarnings("deprecation")
@@ -72,7 +68,7 @@ public class AlloyFurnaceBlock extends BaseEntityBlock {
                 Containers.dropContents(worldIn, pos, (AlloyFurnaceTileEntity)tileentity);
                 worldIn.updateNeighbourForOutputSignal(pos, this);
             }
-
+            worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(KTMPRBlocks.ALLOY_FURNACE.get())));
             super.onRemove(state, worldIn, pos, newState, isMoving);
         }
     }
