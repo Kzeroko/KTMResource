@@ -4,9 +4,24 @@
     "common":
     {
       "armor_negation":32.0,
-      "impact":1.7,
-      "max_strikes":4
+      "impact":2.7,
+      "max_strikes":4,
+      "speed_bonus":0.0
+    },
+    "sao_single_sword":
+    {
+      "armor_negation":32.0,
+      "impact":2.7,
+      "max_strikes":4,
+      "speed_bonus":2
+    },
+    "sao_duel_sword":
+    {
+      "armor_negation":62.0,
+      "impact":5.2,
+      "max_strikes":6,
+      "speed_bonus":4.9
     }
   },
-  "type": "sword"
+  "type":"sao_single_sword"
 }

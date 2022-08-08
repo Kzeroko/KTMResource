@@ -66,7 +66,7 @@ public class KtmItems {
     // Weapons - SAO
 
     public static final RegistryObject<Item> BLACK_SWORD = ITEMS.register("black_sword",
-            () -> new BlackSword(KtmItemTier.ELITE, -1, -2.5f,
+            () -> new BlackSword(KtmItemTier.ELITE, -1, -2.4f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
 
     public static final RegistryObject<Item> BLACKIRON_GREATSWORD = ITEMS.register("blackiron_greatsword",
@@ -74,19 +74,19 @@ public class KtmItems {
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
 
     public static final RegistryObject<Item> BLUE_LONGSWORD = ITEMS.register("blue_longsword",
-            () -> new BlueLongsword(KtmItemTier.ELITE, -5, -2.7f,
+            () -> new BlueLongsword(KtmItemTier.ELITE, -5, -2.5f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
 
     public static final RegistryObject<Item> ANNEAL_BLADE = ITEMS.register("anneal_blade",
-            () -> new AnnealBlade(KtmItemTier.ELITE, -7, -2.7f,
+            () -> new AnnealBlade(KtmItemTier.ELITE, -7, -2.4f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
 
     public static final RegistryObject<Item> BLUEROSE_SWORD = ITEMS.register("bluerose_sword",
-            () -> new BlueroseSword(KtmItemTier.LEGENDARY, -15, -2.6f,
+            () -> new BlueroseSword(KtmItemTier.LEGENDARY, -15, -2.3f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
 
     public static final RegistryObject<Item> FRAGRANT_OLIVESWORD = ITEMS.register("fragrant_olivesword",
-            () -> new FragrantOlivesword(KtmItemTier.LEGENDARY, 6, -2.4f,
+            () -> new FragrantOlivesword(KtmItemTier.LEGENDARY, 6, -2.3f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
 
     public static final RegistryObject<Item> DEMONICSWORD_GRAM = ITEMS.register("demonicsword_gram",
@@ -94,11 +94,11 @@ public class KtmItems {
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
 
     public static final RegistryObject<Item> ELUCIDATOR = ITEMS.register("elucidator",
-            () -> new Elucidator(KtmItemTier.ELITEPLUS, 5, -2.4f,
+            () -> new Elucidator(KtmItemTier.ELITEPLUS, 5, -2.1f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.CUSTOMIZE)));
 
     public static final RegistryObject<Item> DARK_REPULSER = ITEMS.register("dark_repulser",
-            () -> new DarkRepulser(KtmItemTier.ELITEPLUS, 3, -2.4f,
+            () -> new DarkRepulser(KtmItemTier.ELITEPLUS, 3, -2.1f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.OUTER)));
 
     public static final RegistryObject<Item> EBON_DAGGER = ITEMS.register("ebon_dagger",
