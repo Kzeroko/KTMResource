@@ -14,10 +14,12 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import org.jetbrains.annotations.NotNull;
 
 @OnlyIn(Dist.CLIENT)
 public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceContainer> {
@@ -32,17 +34,25 @@ public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceCont
     public void init() {
         super.init();
         this.widthTooNarrowIn = this.width < 379;
-        this.addRenderableWidget(new ConfirmButton(142, 20, this)); // 33
+        this.addRenderableWidget(new ConfirmButton(142, 20, this));
         this.titleLabelX = (this.imageWidth - this.font.width(this.title)) / 2;
     }
 
-    public void render(PoseStack matrixStack, int mouseX, int mouseY, float partialTicks) {
+    public void render(@NotNull PoseStack matrixStack, int mouseX, int mouseY, float partialTicks) {
         this.renderBackground(matrixStack);
         super.render(matrixStack, mouseX, mouseY, partialTicks);
         this.renderTooltip(matrixStack, mouseX, mouseY);
+        // render progress tooltip while mouse hanging over progressbar
+        if (this.isMouseOvereProgressbar(mouseX,mouseY)) {
+            matrixStack.pushPose();
+            matrixStack.scale(.6f, .6f, .6f);
+            Component remainTimeTip = new TextComponent( (new TranslatableComponent("item.ktmresource.alloy_furnace:remain_time")).getString() + ": " + this.parseRemainForgingTime());
+            this.renderTooltip(matrixStack, remainTimeTip, (int) Math.ceil(mouseX/.6), (int) Math.floor(mouseY/.6));
+            matrixStack.popPose();
+        }
     }
 
-    protected void renderBg(PoseStack matrixStack, float partialTicks, int x, int y) {
+    protected void renderBg(@NotNull PoseStack matrixStack, float partialTicks, int x, int y) {
         RenderSystem.setShader(GameRenderer::getPositionTexShader);
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         RenderSystem.setShaderTexture(0, GUI_TEXTURE);
@@ -52,12 +62,25 @@ public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceCont
 
         if (this.menu.isForgeActive()) {
             int k = this.menu.getForgeTimeScaled();
-            this.blit(matrixStack, i + 20, j + 60 - (int) Math.floor(k*36/20), 185,  36-(int) Math.floor(k*36/20), 3, (int) Math.floor((k*36/20)));
+            this.blit(matrixStack, i + 20, j + 60 - (int) Math.floor(k*36.0/20), 185,  36-(int) Math.floor(k*36.0/20), 3, (int) Math.floor((k*36.0/20)));
         }
     }
 
-    // TBD
-    // 1.18 has a mouseClicked, add or not?
+    private String parseRemainForgingTime() {
+        int totalTime = (int)Math.floor(this.menu.getForgingRemainTime() * 0.05);
+        if ((totalTime/60)/60 >0) {
+            return (totalTime/60)/60 + "h " + (totalTime/60)%60 + "min " + totalTime%60 + "s";
+        } else if ((totalTime/60)%60 > 0) {
+            return (totalTime/60)%60 + " min " + totalTime%60 + "s";
+        }else {
+            return totalTime%60 + "s";
+        }
+    }
+
+    private boolean isMouseOvereProgressbar(int mouseX, int mouseY)
+    {
+        return mouseX >= this.leftPos + 20 && mouseX <= this.leftPos + 23 && mouseY >= this.topPos + 24 && mouseY <= this.topPos + 60;
+    }
 
     protected boolean hasClickedOutside(double mouseX, double mouseY, int guiLeftIn, int guiTopIn, int mouseButton) {
         return mouseX < (double)guiLeftIn || mouseY < (double)guiTopIn || mouseX >= (double)(guiLeftIn + this.imageWidth) || mouseY >= (double)(guiTopIn + this.imageHeight);
@@ -74,6 +97,7 @@ public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceCont
         }
 
         public void onPress() {
+            // TBD
             // for test, why no effect?
 //            MMNetworkHandler.sendToServer(new UpdateGemForgePacket(true));
             // here is RecipeValid => msg for SetForgeActive

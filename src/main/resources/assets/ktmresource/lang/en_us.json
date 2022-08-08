@@ -206,5 +206,8 @@
   "item.ktmresource.activator_b.tooltip": "§dActivator Tier-Rare",
   "item.ktmresource.activator_c.tooltip": "§dActivator Tier-Epic",
   "item.ktmresource.activator_d.tooltip": "§dActivator Tier-Legendary",
-  "item.ktmresource.activator_e.tooltip": "§dActivator Tier-Mythic"
+  "item.ktmresource.activator_e.tooltip": "§dActivator Tier-Mythic",
+
+  "item.ktmresource.alloy_furnace:remain_time": "Remain Time"
+
 }

@@ -27,7 +27,7 @@ public class AlloyFurnaceContainer extends RecipeBookMenu<Container> {
     public ContainerData forgeData;
 
     public AlloyFurnaceContainer(int id, Inventory playerInventory) {
-        this(id, playerInventory, new ItemStackHandler(10), new SimpleContainerData(4));
+        this(id, playerInventory, new ItemStackHandler(10), new SimpleContainerData(5));
     }
 
     public AlloyFurnaceContainer(int id, Inventory playerInventory, ItemStackHandler inventory, ContainerData forgeData) {
@@ -177,6 +177,11 @@ public class AlloyFurnaceContainer extends RecipeBookMenu<Container> {
 
         return itemstack;
     }
+
+    public int getForgingRemainTime() {
+        return this.forgeData.get(4);
+    }
+
 
     class MaterialsSlot extends SlotItemHandler {
         public MaterialsSlot(ItemStackHandler inventoryIn, int index, int xIn, int yIn) {

@@ -1,7 +1,7 @@
 {
-    "ktmresource:activator_a": 1.5,
-    "ktmresource:activator_b": 2,
-    "ktmresource:activator_c": 5,
-    "ktmresource:activator_d": 10,
-    "ktmresource:activator_e": 20
+    "ktmresource:activator_a": 2,
+    "ktmresource:activator_b": 4,
+    "ktmresource:activator_c": 8,
+    "ktmresource:activator_d": 16,
+    "ktmresource:activator_e": 32
 }

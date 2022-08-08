@@ -47,6 +47,7 @@ import static net.minecraft.util.Mth.ceil;
 
 public class AlloyFurnaceTileEntity extends BaseContainerBlockEntity implements WorldlyContainer, RecipeHolder, StackedContentsCompatible {
     private final int FORGE_PROGRESS_TOTAL = 100;
+    int multiCoeff = 1;
 
     @Nullable
     protected Component customName;
@@ -65,22 +66,24 @@ public class AlloyFurnaceTileEntity extends BaseContainerBlockEntity implements 
     private boolean forgeActive;
     private boolean recipeValid;
 
+    // for showing remaining forging time
+    private int remainForgingTime = 0;
+    private int remainForgingTimeScaled = 0;
+    private boolean isAtForgingStart = true;
+
+    // TBD
     //* used for transferring useful values
-    // I know this is sloppy, but Containers can only track Int Arrays
+    // I know this is sloppy, but Containers can only track Int Arrays?
     protected final ContainerData forgeData = new ContainerData() {
         public int get(int index) {
-            switch(index) {
-                case 0:
-                    return AlloyFurnaceTileEntity.this.forgeActive ? 1 : 0;
-                case 1:
-                    return AlloyFurnaceTileEntity.this.recipeValid ? 1 : 0;
-                case 2:
-                    return AlloyFurnaceTileEntity.this.forgeProgress;
-                case 3:
-                    return AlloyFurnaceTileEntity.this.FORGE_PROGRESS_TOTAL;
-                default:
-                    return 0;
-            }
+            return switch (index) {
+                case 0 -> AlloyFurnaceTileEntity.this.forgeActive ? 1 : 0;
+                case 1 -> AlloyFurnaceTileEntity.this.recipeValid ? 1 : 0;
+                case 2 -> AlloyFurnaceTileEntity.this.forgeProgress;
+                case 3 -> AlloyFurnaceTileEntity.this.FORGE_PROGRESS_TOTAL;
+                case 4 -> AlloyFurnaceTileEntity.this.remainForgingTimeScaled;
+                default -> 0;
+            };
         }
 
         public void set(int index, int k) {
@@ -99,7 +102,7 @@ public class AlloyFurnaceTileEntity extends BaseContainerBlockEntity implements 
         }
 
         public int getCount() {
-            return 4;
+            return 5;
         }
     };;
 
@@ -113,11 +116,7 @@ public class AlloyFurnaceTileEntity extends BaseContainerBlockEntity implements 
     }
 
     public static void tickForge(Level level, BlockPos pos, BlockState state, AlloyFurnaceTileEntity AlloyFurnace) {
-        boolean flag = AlloyFurnace.isForging();
-        boolean flag1 = false;
-        if (AlloyFurnace.isForging()) {
-            ++AlloyFurnace.forgeTime;
-        }
+        boolean isForging2End = false;
 
         // TBD
         // happened on server??
@@ -127,53 +126,52 @@ public class AlloyFurnaceTileEntity extends BaseContainerBlockEntity implements 
             // handled null recipe already
             AlloyFurnace.recipeValid = AlloyFurnace.canForge(recipe);
 
+            // 9 is the output slot, 8 is the activator, forgeActivate is activated by click the button
             if (AlloyFurnace.recipeValid && AlloyFurnace.forgeActive && AlloyFurnace.getItem(9).isEmpty()) {
                 ++AlloyFurnace.forgeTime;
 
-                double multiCoeff = 1.0;
-                if (!AlloyFurnace.inventory.getStackInSlot(8).isEmpty()) {
-                    multiCoeff = AlloyFurnace.loadActivatorCoeffs(AlloyFurnace.getItem(8).serializeNBT().getString("id"));
-                }
-                AlloyFurnace.forgeProgress = ceil(100 * multiCoeff * AlloyFurnace.forgeTime / recipe.forgingTime);
+                if (AlloyFurnace.isAtForgingStart) {
+                    AlloyFurnace.remainForgingTime = recipe.forgingTime;
+                    AlloyFurnace.isAtForgingStart = false;
 
-                if (multiCoeff * AlloyFurnace.forgeTime >= recipe.forgingTime ) {
+                    if (!AlloyFurnace.inventory.getStackInSlot(8).isEmpty()) {
+                        AlloyFurnace.multiCoeff = AlloyFurnace.loadActivatorCoeffs(AlloyFurnace.getItem(8).serializeNBT().getString("id"));
+                        AlloyFurnace.removeItem(8,1);
+                    }
+                    level.setBlock(pos, state.setValue(AlloyFurnaceBlock.LIT, true), 3);
+                }
+
+                AlloyFurnace.forgeProgress = ceil(100.0 * AlloyFurnace.multiCoeff * AlloyFurnace.forgeTime / recipe.forgingTime);
+
+                // show remain time
+                AlloyFurnace.remainForgingTime -= AlloyFurnace.multiCoeff;
+                AlloyFurnace.remainForgingTimeScaled = AlloyFurnace.remainForgingTime/AlloyFurnace.multiCoeff;
+
+                // normal end
+                if (AlloyFurnace.multiCoeff * AlloyFurnace.forgeTime >= recipe.forgingTime ) {
                     AlloyFurnace.forgeTime = 0;
                     AlloyFurnace.forgeProgress = 0;
                     AlloyFurnace.forge(recipe);
-                    flag1 = true;
+                    isForging2End = true;
                 }
+
             } else {
-                AlloyFurnace.forgeActive = false;
+                // abnormal end
+                AlloyFurnace.forgeActive = false; // when activated but recipeInvalid/ outputSlotFull
                 AlloyFurnace.forgeTime = 0;
                 AlloyFurnace.forgeProgress = 0;
-            }
-
-            // activated when forging_state_at_tick_start !=  forging_state_at_tick_end
-            if (flag != AlloyFurnace.isForging()) {
-                flag1 = true;
-                level.setBlock(pos, state.setValue(AlloyFurnaceBlock.LIT, AlloyFurnace.isForging()), 3);
+                isForging2End = true;
             }
         }
 
-        if (flag1) {
+        if (isForging2End) {
             AlloyFurnace.setChanged();
+            AlloyFurnace.isAtForgingStart = true;
+            AlloyFurnace.remainForgingTimeScaled = 0;
+            AlloyFurnace.multiCoeff = 1;
+            level.setBlock(pos, state.setValue(AlloyFurnaceBlock.LIT, false), 3);
         }
     }
-
-    private boolean isForging() {
-        return this.forgeProgress > 0;
-    }
-
-    // TBD
-    // unused in 1.18 ??
-//    @Nullable
-//    public SUpdateTileEntityPacket getUpdatePacket() {
-//        return new SUpdateTileEntityPacket(this.pos, 3, this.getUpdateTag());
-//    }
-//
-//    public CompoundNBT getUpdateTag() {
-//        return this.write(new CompoundNBT());
-//    }
 
     @Override
     public void setCustomName(Component name) {
@@ -342,19 +340,19 @@ public class AlloyFurnaceTileEntity extends BaseContainerBlockEntity implements 
 //        }
     }
 
-    public double loadActivatorCoeffs(String activator_name) {
+    public int loadActivatorCoeffs(String activator_name) {
         String activators_path = "assets/ktmresource/forging_helper/forging_activators.json";
 
         BufferedReader bufferedReader  = new BufferedReader(new InputStreamReader(Objects.requireNonNull(getClass().getClassLoader()
                 .getResourceAsStream(activators_path)), StandardCharsets.UTF_8));
 
-        Type mapType = new TypeToken<Map<String, Double>>(){}.getType();
-        Map<String, Double> activators = new Gson().fromJson(bufferedReader, mapType);
+        Type mapType = new TypeToken<Map<String, Integer>>(){}.getType();
+        Map<String, Integer> activators = new Gson().fromJson(bufferedReader, mapType);
 
         if (!activators.containsKey(activator_name)){
             throw new RuntimeException("un assigned activator for forging");
         }else{
-            double coeff = activators.get(activator_name);
+            int coeff = activators.get(activator_name);
             if (coeff <= 0){
                 throw new RuntimeException("unsupported speeding up coefficient");
             }else {

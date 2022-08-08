@@ -206,5 +206,7 @@
   "item.ktmresource.activator_b.tooltip": "§d助融石 等阶-稀有",
   "item.ktmresource.activator_c.tooltip": "§d助融石 等阶-史诗",
   "item.ktmresource.activator_d.tooltip": "§d助融石 等阶-传奇",
-  "item.ktmresource.activator_e.tooltip": "§d助融石 等阶-神话"
+  "item.ktmresource.activator_e.tooltip": "§d助融石 等阶-神话",
+
+  "item.ktmresource.alloy_furnace:remain_time": "剩余时间"
 }
