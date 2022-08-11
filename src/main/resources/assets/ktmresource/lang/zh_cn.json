@@ -202,11 +202,11 @@
   "item.ktmresource.activator_d": "四阶助融石",
   "item.ktmresource.activator_e": "五阶助融石",
 
-  "item.ktmresource.activator_a.tooltip": "§d助融石 等阶-不凡",
-  "item.ktmresource.activator_b.tooltip": "§d助融石 等阶-稀有",
+  "item.ktmresource.activator_a.tooltip": "§a助融石 等阶-不凡",
+  "item.ktmresource.activator_b.tooltip": "§b助融石 等阶-稀有",
   "item.ktmresource.activator_c.tooltip": "§d助融石 等阶-史诗",
-  "item.ktmresource.activator_d.tooltip": "§d助融石 等阶-传奇",
-  "item.ktmresource.activator_e.tooltip": "§d助融石 等阶-神话",
+  "item.ktmresource.activator_d.tooltip": "§6助融石 等阶-传奇",
+  "item.ktmresource.activator_e.tooltip": "§c助融石 等阶-神话",
 
   "item.ktmresource.alloy_furnace:remain_time": "剩余时间"
 }
