@@ -29,6 +29,7 @@
   "item.ktmresource.dark_repulser": "Dark Repulser",
   "item.ktmresource.demonicsword_gram": "Demonic Sword Gram",
   "item.ktmresource.ebon_dagger": "Ebon Dagger",
+  "item.ktmresource.lambent_light": "Lambent Light",
 
   "item.ktmresource.core": "Core",
   "item.ktmresource.cast_iron_dust": "Cast Iron Dust",
@@ -185,16 +186,18 @@
   "desc.ktmresource.dark_repulser": "——Forged from an extremely rare crystal, the blade is incredibly light and thin for a single-handed sword",
   "desc.ktmresource.demonicsword_gram": "——A crimson-red two-handed demon sword, the equipment level is unimaginable high. It is named after the dragon-slaying sword in Norse mythology",
   "desc.ktmresource.ebon_dagger": "——A dark dagger with a hilt made of a special wood blend. Popular among travelers due to its lightness",
+  "desc.ktmresource.lambent_light": "——A masterpiece of rapier weapons, made for agile type users. Due to this weapon is hand forged, its hidden rarity surpasses any other rapier weapons",
 
   "itemGroup.ktmresourceTab": "KTM resource - Misc",
   "itemGroup.ktmingotsTab": "KTM resource - Ingots",
   "itemGroup.ktmbucketsTab": "KTM resource - Fluid Buckets",
   "itemGroup.ktmweaponsTab": "KTM resource - Weapons",
   "itemGroup.ktmblocksTab": "KTM resource - Blocks",
+  "itemGroup.ktmoiconsTab": "KTM resource - Origins Icons",
 
   "ktmresource.jei.forging": "Forging",
-  "block.ktmresource.alloy_furnace": "Alloy Furnace",
-  "ktmresource:container.alloy_furnace": "Alloy Furnace",
+  "block.ktmresource.alloy_furnace": "Ancient Furnace",
+  "ktmresource:container.alloy_furnace": "Ancient Furnace",
 
   "item.ktmresource.activator_a": "Tier 1 activator",
   "item.ktmresource.activator_b": "Tier 2 activator",
@@ -208,6 +211,17 @@
   "item.ktmresource.activator_d.tooltip": "§6Activator Tier-Legendary",
   "item.ktmresource.activator_e.tooltip": "§cActivator Tier-Mythic",
 
-  "item.ktmresource.alloy_furnace:remain_time": "Remain Time"
+  "item.ktmresource.alloy_furnace:remain_time": "Remain Time",
 
+  "item.ktmresource.oicon_human": "Human Icon",
+  "item.ktmresource.oicon_elf": "Elf Icon",
+  "item.ktmresource.oicon_dwarf": "Dwarf Icon",
+  "item.ktmresource.oicon_oni": "Oni Icon",
+  "item.ktmresource.oicon_kitsune": "Kitsune Icon",
+  "item.ktmresource.oicon_dragon": "Dragon Icon",
+  "item.ktmresource.oicon_mermaid": "Mermaid Icon",
+  "item.ktmresource.oicon_wingedspirit": "Winged Spirit Icon",
+  "item.ktmresource.oicon_slime": "Slime Icon",
+  "item.ktmresource.oicon_mecha": "Mecha Icon",
+  "item.ktmresource.oicon_demon": "Demon Icon"
 }

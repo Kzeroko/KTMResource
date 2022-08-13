@@ -1,6 +1,38 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "ktmresource:item/weapons/wooden_bat"
-  }
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "ktmresource:item/weapons/wooden_bat"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-45, -90, 0],
+			"translation": [0, 7.25, 1.25],
+			"scale": [1.1, 1.1, 1.1]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-45, 90, 0],
+			"translation": [0, 7.25, 1.25],
+			"scale": [1.1, 1.1, 1.1]
+		},
+		"firstperson_righthand": {
+			"rotation": [-90, -90, -35],
+			"translation": [1, 6.25, 1],
+			"scale": [1.1, 1.1, 1.1]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-90, 90, 35],
+			"translation": [1, 6.25, 1],
+			"scale": [1.1, 1.1, 1.1]
+		},
+		"ground": {
+			"rotation": [0, 0, 90],
+			"translation": [0, 4, 0]
+		},
+		"head": {
+			"rotation": [0, 0, -45],
+			"translation": [-0.5, 9, 0],
+			"scale": [1.1, 1.1, 1.1]
+		}
+	}
 }

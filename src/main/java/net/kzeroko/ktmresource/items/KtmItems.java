@@ -94,16 +94,20 @@ public class KtmItems {
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
 
     public static final RegistryObject<Item> ELUCIDATOR = ITEMS.register("elucidator",
-            () -> new Elucidator(KtmItemTier.ELITEPLUS, 5, -2.1f,
+            () -> new Elucidator(KtmItemTier.ELITEPLUS, 6, -2.1f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.CUSTOMIZE)));
 
     public static final RegistryObject<Item> DARK_REPULSER = ITEMS.register("dark_repulser",
-            () -> new DarkRepulser(KtmItemTier.ELITEPLUS, 3, -2.1f,
+            () -> new DarkRepulser(KtmItemTier.ELITEPLUS, 4, -2.1f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.OUTER)));
 
     public static final RegistryObject<Item> EBON_DAGGER = ITEMS.register("ebon_dagger",
             () -> new EbonDagger(KtmItemTier.ADVANCED, -3, -2.0f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
+
+    public static final RegistryObject<Item> LAMBENT_LIGHT = ITEMS.register("lambent_light",
+            () -> new LambentLight(KtmItemTier.ELITEPLUS, -4, -0.5f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.OUTER)));
 
     // Weapons - another
 
@@ -390,6 +394,41 @@ public class KtmItems {
     public static final RegistryObject<Item> BLAZINGSOUL_BUCKET = ITEMS.register("blazingsoul_bucket",
             ()-> new BucketItem(KtmFluid.BLAZINGSOUL,
                     new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(KtmItemTab.KTMBUCKETS)));
+
+    // Origins Icons
+
+    public static final RegistryObject<Item> OICON_HUMAN = ITEMS.register("oicon_human",
+            () -> new Item(new Item.Properties().tab(KtmItemTab.KTMOICONS).rarity(KtmItemRarity.FORBIDDEN)));
+
+    public static final RegistryObject<Item> OICON_ELF = ITEMS.register("oicon_elf",
+            () -> new Item(new Item.Properties().tab(KtmItemTab.KTMOICONS).rarity(KtmItemRarity.FORBIDDEN)));
+
+    public static final RegistryObject<Item> OICON_DWARF = ITEMS.register("oicon_dwarf",
+            () -> new Item(new Item.Properties().tab(KtmItemTab.KTMOICONS).rarity(KtmItemRarity.FORBIDDEN)));
+
+    public static final RegistryObject<Item> OICON_ONI = ITEMS.register("oicon_oni",
+            () -> new Item(new Item.Properties().tab(KtmItemTab.KTMOICONS).rarity(KtmItemRarity.FORBIDDEN)));
+
+    public static final RegistryObject<Item> OICON_KITSUNE = ITEMS.register("oicon_kitsune",
+            () -> new Item(new Item.Properties().tab(KtmItemTab.KTMOICONS).rarity(KtmItemRarity.FORBIDDEN)));
+
+    public static final RegistryObject<Item> OICON_DRAGON = ITEMS.register("oicon_dragon",
+            () -> new Item(new Item.Properties().tab(KtmItemTab.KTMOICONS).rarity(KtmItemRarity.FORBIDDEN)));
+
+    public static final RegistryObject<Item> OICON_MERMAID = ITEMS.register("oicon_mermaid",
+            () -> new Item(new Item.Properties().tab(KtmItemTab.KTMOICONS).rarity(KtmItemRarity.FORBIDDEN)));
+
+    public static final RegistryObject<Item> OICON_WINGEDSPIRIT = ITEMS.register("oicon_wingedspirit",
+            () -> new Item(new Item.Properties().tab(KtmItemTab.KTMOICONS).rarity(KtmItemRarity.FORBIDDEN)));
+
+    public static final RegistryObject<Item> OICON_SLIME = ITEMS.register("oicon_slime",
+            () -> new Item(new Item.Properties().tab(KtmItemTab.KTMOICONS).rarity(KtmItemRarity.FORBIDDEN)));
+
+    public static final RegistryObject<Item> OICON_MECHA = ITEMS.register("oicon_mecha",
+            () -> new Item(new Item.Properties().tab(KtmItemTab.KTMOICONS).rarity(KtmItemRarity.FORBIDDEN)));
+
+    public static final RegistryObject<Item> OICON_DEMON = ITEMS.register("oicon_demon",
+            () -> new Item(new Item.Properties().tab(KtmItemTab.KTMOICONS).rarity(KtmItemRarity.FORBIDDEN)));
 
     // Activators
     public static final RegistryObject<Item> ACTIVATORS_A = registerItem("activator_a", ForgingActivators::new);

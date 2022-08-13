@@ -29,6 +29,7 @@
   "item.ktmresource.dark_repulser": "逐暗者",
   "item.ktmresource.demonicsword_gram": "魔剑瓦兰姆",
   "item.ktmresource.ebon_dagger": "乌木短剑",
+  "item.ktmresource.lambent_light": "闪烁之光",
 
   "item.ktmresource.core": "核心",
   "item.ktmresource.cast_iron_dust": "铸铁粉",
@@ -185,16 +186,18 @@
   "desc.ktmresource.dark_repulser": "——由极为稀有的水晶锻造而成，由于其特性剑身非常的轻薄，作为单手剑来说都有些不可思议。",
   "desc.ktmresource.demonicsword_gram": "——赤红色的双手魔剑，其装备等级之高让各路高手都望尘莫及。取名来自北欧神话中的屠龙之剑",
   "desc.ktmresource.ebon_dagger": "——一把暗色的短剑，剑柄是由一种特殊木材混合制作而成的。由于轻便性深受旅者们的青睐",
+  "desc.ktmresource.lambent_light": "——精致到令人称之为杰作的突刺武器，非常适合身手敏捷的使用者。由于是手工锻造武器，它的隐藏稀有程度远超同类别武器",
 
   "itemGroup.ktmresourceTab": "KTM 资源 - 杂项",
   "itemGroup.ktmingotsTab": "KTM 资源 - 金属锭",
   "itemGroup.ktmbucketsTab": "KTM 资源 - 液体与桶",
   "itemGroup.ktmweaponsTab": "KTM 资源 - 武器",
   "itemGroup.ktmblocksTab": "KTM 资源 - 方块",
+  "itemGroup.ktmoiconsTab": "KTM 资源 - 起源头像",
 
   "ktmresource.jei.forging": "熔炼",
-  "block.ktmresource.alloy_furnace": "合金锻炉",
-  "ktmresource:container.alloy_furnace": "合金锻炉",
+  "block.ktmresource.alloy_furnace": "远古锻炉",
+  "ktmresource:container.alloy_furnace": "远古锻炉",
 
   "item.ktmresource.activator_a": "一阶助融石",
   "item.ktmresource.activator_b": "二阶助融石",
@@ -208,5 +211,17 @@
   "item.ktmresource.activator_d.tooltip": "§6助融石 等阶-传奇",
   "item.ktmresource.activator_e.tooltip": "§c助融石 等阶-神话",
 
-  "item.ktmresource.alloy_furnace:remain_time": "剩余时间"
+  "item.ktmresource.alloy_furnace:remain_time": "剩余时间",
+
+  "item.ktmresource.oicon_human": "人类头像",
+  "item.ktmresource.oicon_elf": "精灵族头像",
+  "item.ktmresource.oicon_dwarf": "矮人族头像",
+  "item.ktmresource.oicon_oni": "鬼妖族头像",
+  "item.ktmresource.oicon_kitsune": "狐妖族头像",
+  "item.ktmresource.oicon_dragon": "龙人族头像",
+  "item.ktmresource.oicon_mermaid": "鱼人族头像",
+  "item.ktmresource.oicon_wingedspirit": "羽灵族头像",
+  "item.ktmresource.oicon_slime": "粘液生物头像",
+  "item.ktmresource.oicon_mecha": "机械种头像",
+  "item.ktmresource.oicon_demon": "魔族头像"
 }

@@ -35,4 +35,10 @@ public class KtmItemTab {
         public ItemStack makeIcon() { return new ItemStack(KTMPRBlocks.ALLOY_FURNACE.get());
         }
     };
+
+    public static final CreativeModeTab KTMOICONS = new CreativeModeTab("ktmoiconsTab") {
+        @Override
+        public ItemStack makeIcon() { return new ItemStack(KtmItems.OICON_ELF.get());
+        }
+    };
 }
