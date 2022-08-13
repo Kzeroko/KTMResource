@@ -4,6 +4,7 @@ import net.kzeroko.ktmresource.KTMResource;
 import net.kzeroko.ktmresource.fluids.KtmFluid;
 import net.kzeroko.ktmresource.items.AlloyFurnace.ForgingActivators;
 import net.kzeroko.ktmresource.items.custom.*;
+import net.kzeroko.ktmresource.items.lobby.TPCommandItemTemplate;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -437,6 +438,8 @@ public class KtmItems {
     public static final RegistryObject<Item> ACTIVATORS_D = registerItem("activator_d", ForgingActivators::new);
     public static final RegistryObject<Item> ACTIVATORS_E = registerItem("activator_e", ForgingActivators::new);
 
+    // lobby tps
+    public static final RegistryObject<Item> LOBBY_TP_1 = registerItem("lobby_tp_1", TPCommandItemTemplate::new);
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
