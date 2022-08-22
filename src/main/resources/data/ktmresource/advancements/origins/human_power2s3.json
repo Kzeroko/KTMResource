@@ -1,0 +1,14 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:clock"
+    },
+    "title": "Human Origin Power 2",
+    "description": "Stage 3",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "ktmresource:origins/human_power2s2",
+  "criteria": {}
+}

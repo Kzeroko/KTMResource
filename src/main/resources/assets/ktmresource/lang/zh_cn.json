@@ -30,6 +30,7 @@
   "item.ktmresource.demonicsword_gram": "魔剑瓦兰姆",
   "item.ktmresource.ebon_dagger": "乌木短剑",
   "item.ktmresource.lambent_light": "闪烁之光",
+  "item.ktmresource.bladeof_greed": "贪婪巨剑",
 
   "item.ktmresource.core": "核心",
   "item.ktmresource.cast_iron_dust": "铸铁粉",
@@ -187,6 +188,7 @@
   "desc.ktmresource.demonicsword_gram": "——赤红色的双手魔剑，其装备等级之高让各路高手都望尘莫及。取名来自北欧神话中的屠龙之剑",
   "desc.ktmresource.ebon_dagger": "——一把暗色的短剑，剑柄是由一种特殊木材混合制作而成的。由于轻便性深受旅者们的青睐",
   "desc.ktmresource.lambent_light": "——精致到令人称之为杰作的突刺武器，非常适合身手敏捷的使用者。由于是手工锻造武器，它的隐藏稀有程度远超同类别武器",
+  "desc.ktmresource.bladeof_greed":"——哥布林大军为兽人打造了一把坚韧无比的巨剑，一般人无法轻易挥舞这把武器，不过或许，某些力量型战士可以突破这个限制？……",
 
   "itemGroup.ktmresourceTab": "KTM 资源 - 杂项",
   "itemGroup.ktmingotsTab": "KTM 资源 - 金属锭",
@@ -223,5 +225,11 @@
   "item.ktmresource.oicon_wingedspirit": "羽灵族头像",
   "item.ktmresource.oicon_slime": "粘液生物头像",
   "item.ktmresource.oicon_mecha": "机械种头像",
-  "item.ktmresource.oicon_demon": "魔族头像"
+  "item.ktmresource.oicon_demon": "魔族头像",
+
+  "item.ktmresource.citem_lobby": "跃迁石——「主城」",
+  "item.ktmresource.citem_mining": "跃迁石——「矿区」",
+  "item.ktmresource.citem_fishing": "跃迁石——「海岛」",
+  "item.ktmresource.citem_spawn": "跃迁石——「原初」",
+  "item.ktmresource.citem_back": "跃迁石——「回归」"
 }

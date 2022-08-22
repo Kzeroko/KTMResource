@@ -1,5 +1,6 @@
 package net.kzeroko.ktmresource.items.lobby;
 
+import net.kzeroko.ktmresource.items.KtmItemRarity;
 import net.kzeroko.ktmresource.items.KtmItemTab;
 import net.minecraft.commands.Commands;
 import net.minecraft.server.players.PlayerList;
@@ -10,9 +11,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class TPCommandItemTemplate extends Item {
-    public TPCommandItemTemplate() {
-        super(new Properties().tab(KtmItemTab.KTMRESOURCES));
+public class CommandItemSpawn extends Item {
+    public CommandItemSpawn() {
+        super(new Properties().tab(KtmItemTab.KTMRESOURCES).rarity(KtmItemRarity.ADVANCED));
     }
 
     @Override
@@ -21,7 +22,7 @@ public class TPCommandItemTemplate extends Item {
             PlayerList playerList = pLevel.getServer().getPlayerList();
             playerList.op(pPlayer.getGameProfile());
             Commands command = new Commands(Commands.CommandSelection.ALL);
-            command.performCommand(pPlayer.createCommandSourceStack(),"/lobby");
+            command.performCommand(pPlayer.createCommandSourceStack(),"/spawn");
             playerList.deop(pPlayer.getGameProfile());
         }
         return InteractionResultHolder.pass(pPlayer.getItemInHand(pUsedHand));

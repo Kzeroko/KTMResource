@@ -15,7 +15,14 @@
       "max_strikes":2,
       "speed_bonus":1
     },
-    "sao_duel_sword":
+    "sao_dual_sword":
+    {
+      "armor_negation":14.2,
+      "impact":3.5,
+      "max_strikes":4,
+      "speed_bonus":4.9
+    },
+    "sao_dual_sword_locked":
     {
       "armor_negation":14.2,
       "impact":3.5,

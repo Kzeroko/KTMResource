@@ -4,7 +4,7 @@ import net.kzeroko.ktmresource.KTMResource;
 import net.kzeroko.ktmresource.fluids.KtmFluid;
 import net.kzeroko.ktmresource.items.AlloyFurnace.ForgingActivators;
 import net.kzeroko.ktmresource.items.custom.*;
-import net.kzeroko.ktmresource.items.lobby.TPCommandItemTemplate;
+import net.kzeroko.ktmresource.items.lobby.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -109,6 +109,10 @@ public class KtmItems {
     public static final RegistryObject<Item> LAMBENT_LIGHT = ITEMS.register("lambent_light",
             () -> new LambentLight(KtmItemTier.ELITEPLUS, -4, -0.5f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.OUTER)));
+
+    public static final RegistryObject<Item> BLADEOF_GREED = ITEMS.register("bladeof_greed",
+            () -> new BladeofGreed(KtmItemTier.ELITEPLUS, 0, -3.2f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.VENOMOUS)));
 
     // Weapons - another
 
@@ -438,8 +442,12 @@ public class KtmItems {
     public static final RegistryObject<Item> ACTIVATORS_D = registerItem("activator_d", ForgingActivators::new);
     public static final RegistryObject<Item> ACTIVATORS_E = registerItem("activator_e", ForgingActivators::new);
 
-    // lobby tps
-    public static final RegistryObject<Item> LOBBY_TP_1 = registerItem("lobby_tp_1", TPCommandItemTemplate::new);
+    // Command Items
+    public static final RegistryObject<Item> CITEM_LOBBY = registerItem("citem_lobby", CommandItemLobby::new);
+    public static final RegistryObject<Item> CITEM_MINING = registerItem("citem_mining", CommandItemMining::new);
+    public static final RegistryObject<Item> CITEM_FISHING = registerItem("citem_fishing", CommandItemFishing::new);
+    public static final RegistryObject<Item> CITEM_SPAWN = registerItem("citem_spawn", CommandItemSpawn::new);
+    public static final RegistryObject<Item> CITEM_BACK = registerItem("citem_back", CommandItemBack::new);
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

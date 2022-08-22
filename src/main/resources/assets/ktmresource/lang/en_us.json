@@ -30,6 +30,7 @@
   "item.ktmresource.demonicsword_gram": "Demonic Sword Gram",
   "item.ktmresource.ebon_dagger": "Ebon Dagger",
   "item.ktmresource.lambent_light": "Lambent Light",
+  "item.ktmresource.bladeof_greed": "Blade of Greed",
 
   "item.ktmresource.core": "Core",
   "item.ktmresource.cast_iron_dust": "Cast Iron Dust",
@@ -187,6 +188,7 @@
   "desc.ktmresource.demonicsword_gram": "——A crimson-red two-handed demon sword, the equipment level is unimaginable high. It is named after the dragon-slaying sword in Norse mythology",
   "desc.ktmresource.ebon_dagger": "——A dark dagger with a hilt made of a special wood blend. Popular among travelers due to its lightness",
   "desc.ktmresource.lambent_light": "——A masterpiece of rapier weapons, made for agile type users. Due to this weapon is hand forged, its hidden rarity surpasses any other rapier weapons",
+  "desc.ktmresource.bladeof_greed":"——A tough giant sword built by the goblin army for the orc slaves. No man could easily wield this sword, unless he has reached to another level",
 
   "itemGroup.ktmresourceTab": "KTM resource - Misc",
   "itemGroup.ktmingotsTab": "KTM resource - Ingots",
@@ -223,5 +225,11 @@
   "item.ktmresource.oicon_wingedspirit": "Winged Spirit Icon",
   "item.ktmresource.oicon_slime": "Slime Icon",
   "item.ktmresource.oicon_mecha": "Mecha Icon",
-  "item.ktmresource.oicon_demon": "Demon Icon"
+  "item.ktmresource.oicon_demon": "Demon Icon",
+
+  "item.ktmresource.citem_lobby": "Leap Stone——「Lobby」",
+  "item.ktmresource.citem_mining": "Leap Stone——「Mining」",
+  "item.ktmresource.citem_fishing": "Leap Stone——「Fishing」",
+  "item.ktmresource.citem_spawn": "Leap Stone——「Spawn」",
+  "item.ktmresource.citem_back": "Leap Stone——「Back」"
 }
