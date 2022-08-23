@@ -10,7 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class KTMPRContainerTypes {
+public class KtmContainerTypes {
     public static final DeferredRegister<MenuType<?>> CONTAINER_TYPES = DeferredRegister.create(ForgeRegistries.CONTAINERS, KTMResource.MOD_ID);
 
     public static final RegistryObject<MenuType<AlloyFurnaceContainer>> ALLOY_FURNACE_CONTAINER = CONTAINER_TYPES.register("alloy_furnace_container", () -> IForgeMenuType.create(((windowId, inv, data) -> new AlloyFurnaceContainer(windowId, inv))));

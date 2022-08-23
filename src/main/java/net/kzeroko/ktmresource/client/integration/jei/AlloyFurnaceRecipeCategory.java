@@ -9,7 +9,7 @@ import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.ingredients.IIngredients;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.kzeroko.ktmresource.KTMResource;
-import net.kzeroko.ktmresource.init.KTMPRBlocks;
+import net.kzeroko.ktmresource.init.KtmBlocks;
 import net.kzeroko.ktmresource.recipes.ForgingRecipe;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
@@ -28,7 +28,7 @@ public class AlloyFurnaceRecipeCategory implements IRecipeCategory<ForgingRecipe
 
     public AlloyFurnaceRecipeCategory(IGuiHelper guiHelper) {
         this.background = guiHelper.createDrawable(new ResourceLocation(KTMResource.MOD_ID, "textures/gui/container/alloy_furnace.png"), 0, 185, 151, 54);
-        this.icon = guiHelper.createDrawableIngredient(new ItemStack(KTMPRBlocks.ALLOY_FURNACE.get().asItem()));
+        this.icon = guiHelper.createDrawableIngredient(new ItemStack(KtmBlocks.ALLOY_FURNACE.get().asItem()));
     }
 
     @Override

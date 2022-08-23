@@ -1,8 +1,8 @@
 package net.kzeroko.ktmresource.containers;
 
 
-import net.kzeroko.ktmresource.init.KTMPRContainerTypes;
-import net.kzeroko.ktmresource.init.KTMPRTags;
+import net.kzeroko.ktmresource.init.KtmContainerTypes;
+import net.kzeroko.ktmresource.init.KtmTags;
 import net.kzeroko.ktmresource.recipes.AlloyFurnaceServerRecipePlacer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.Container;
@@ -31,7 +31,7 @@ public class AlloyFurnaceContainer extends RecipeBookMenu<Container> {
     }
 
     public AlloyFurnaceContainer(int id, Inventory playerInventory, ItemStackHandler inventory, ContainerData forgeData) {
-        super(KTMPRContainerTypes.ALLOY_FURNACE_CONTAINER.get(), id);
+        super(KtmContainerTypes.ALLOY_FURNACE_CONTAINER.get(), id);
         this.forgeData = forgeData;
         this.forgeInventory = inventory;
         this.world = playerInventory.player.level;
@@ -189,7 +189,7 @@ public class AlloyFurnaceContainer extends RecipeBookMenu<Container> {
         }
 
         public boolean mayPlace(ItemStack stack) {
-            return stack.is(KTMPRTags.Items.FORGING_MATERIALS);
+            return stack.is(KtmTags.Items.FORGING_MATERIALS);
         }
 
         @Override
@@ -209,7 +209,7 @@ public class AlloyFurnaceContainer extends RecipeBookMenu<Container> {
         }
 
         public boolean mayPlace(ItemStack stack) {
-            return stack.is(KTMPRTags.Items.FORGING_FUELS);
+            return stack.is(KtmTags.Items.FORGING_FUELS);
         }
 
         @Override
@@ -229,7 +229,7 @@ public class AlloyFurnaceContainer extends RecipeBookMenu<Container> {
         }
 
         public boolean mayPlace(ItemStack stack) {
-            return stack.is(KTMPRTags.Items.FORGING_ACTIVATORS);
+            return stack.is(KtmTags.Items.FORGING_ACTIVATORS);
         }
 
         @Override
@@ -249,7 +249,7 @@ public class AlloyFurnaceContainer extends RecipeBookMenu<Container> {
         }
 
         public boolean mayPlace(ItemStack stack) {
-            return stack.is(KTMPRTags.Items.FORGING_OUTPUTS);
+            return stack.is(KtmTags.Items.FORGING_OUTPUTS);
         }
 
         @Override

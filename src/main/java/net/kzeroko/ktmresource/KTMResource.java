@@ -1,11 +1,11 @@
 package net.kzeroko.ktmresource;
 
 import com.mojang.logging.LogUtils;
-import net.kzeroko.ktmresource.client.KTMPRClient;
-import net.kzeroko.ktmresource.fluids.KtmFluid;
+import net.kzeroko.ktmresource.client.KtmClient;
+import net.kzeroko.ktmresource.fluids.KtmFluids;
 import net.kzeroko.ktmresource.init.*;
-import net.kzeroko.ktmresource.items.KtmItems;
-import net.kzeroko.ktmresource.network.KTMPRNetworkHandler;
+import net.kzeroko.ktmresource.init.KtmItems;
+import net.kzeroko.ktmresource.network.KtmNetworkHandler;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,12 +33,12 @@ public class KTMResource
         eventBus.addListener(this::clientSetup);
 
         KtmItems.register(eventBus);
-        KtmFluid.register(eventBus);
-        KTMPRBlocks.register(eventBus);
-        KTMPRRecipes.register(eventBus);
-        KTMPRContainerTypes.register(eventBus);
-        KTMPRTileEntityTypes.register(eventBus);
-        KTMPRSounds.register(eventBus);
+        KtmFluids.register(eventBus);
+        KtmBlocks.register(eventBus);
+        KtmRecipes.register(eventBus);
+        KtmContainerTypes.register(eventBus);
+        KtmTileEntityTypes.register(eventBus);
+        KtmSounds.register(eventBus);
 
         eventBus.addListener(this::setup);
 
@@ -52,11 +52,11 @@ public class KTMResource
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(KTMPRNetworkHandler::register);
+        event.enqueueWork(KtmNetworkHandler::register);
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
-        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> KTMPRClient::init);
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> KtmClient::init);
     }
 
 }

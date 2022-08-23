@@ -1,5 +1,6 @@
 package net.kzeroko.ktmresource.items;
 
+import net.kzeroko.ktmresource.init.KtmItems;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;

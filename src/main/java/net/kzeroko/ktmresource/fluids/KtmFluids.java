@@ -1,7 +1,7 @@
 package net.kzeroko.ktmresource.fluids;
 
 import net.kzeroko.ktmresource.KTMResource;
-import net.kzeroko.ktmresource.items.KtmItems;
+import net.kzeroko.ktmresource.init.KtmItems;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.material.Fluid;
@@ -12,9 +12,9 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import static net.kzeroko.ktmresource.init.KTMPRBlocks.BLAZING_SOUL;
+import static net.kzeroko.ktmresource.init.KtmBlocks.BLAZING_SOUL;
 
-public class KtmFluid {
+public class KtmFluids {
     public static final ResourceLocation BLAZINGSOUL_STILL = new ResourceLocation(KTMResource.MOD_ID,
             "block/fluid/blazing_soul_still");
     public static final ResourceLocation BLAZINGSOUL_FLOW = new ResourceLocation(KTMResource.MOD_ID,

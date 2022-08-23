@@ -5,7 +5,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import com.google.gson.JsonSyntaxException;
 import com.mojang.datafixers.util.Pair;
-import net.kzeroko.ktmresource.init.KTMPRRecipes;
+import net.kzeroko.ktmresource.init.KtmRecipes;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
@@ -120,7 +120,7 @@ public class ForgingRecipe implements IForgingRecipe {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return KTMPRRecipes.FORGING_RECIPE.get();
+        return KtmRecipes.FORGING_RECIPE.get();
     }
 
     // wm?

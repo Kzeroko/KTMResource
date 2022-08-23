@@ -6,10 +6,10 @@ import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import net.kzeroko.ktmresource.KTMResource;
 import net.kzeroko.ktmresource.blocks.AlloyFurnaceBlock;
 import net.kzeroko.ktmresource.containers.AlloyFurnaceContainer;
-import net.kzeroko.ktmresource.init.KTMPRRecipes;
-import net.kzeroko.ktmresource.init.KTMPRSounds;
-import net.kzeroko.ktmresource.init.KTMPRTags;
-import net.kzeroko.ktmresource.init.KTMPRTileEntityTypes;
+import net.kzeroko.ktmresource.init.KtmRecipes;
+import net.kzeroko.ktmresource.init.KtmSounds;
+import net.kzeroko.ktmresource.init.KtmTags;
+import net.kzeroko.ktmresource.init.KtmTileEntityTypes;
 import net.kzeroko.ktmresource.recipes.ForgingRecipe;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -91,7 +91,7 @@ public class AlloyFurnaceTileEntity extends BaseContainerBlockEntity implements 
                 case 0:
                     AlloyFurnaceTileEntity.this.forgeActive = k == 1;
                     if (!AlloyFurnaceTileEntity.this.level.isClientSide()) {
-                        AlloyFurnaceTileEntity.this.level.playSound(null, AlloyFurnaceTileEntity.this.worldPosition, KTMPRSounds.ALLOY_FURNACE_COOK.get(), SoundSource.BLOCKS, 1.0F, AlloyFurnaceTileEntity.this.level.getRandom().nextFloat() * 0.4F + 1.0F);
+                        AlloyFurnaceTileEntity.this.level.playSound(null, AlloyFurnaceTileEntity.this.worldPosition, KtmSounds.ALLOY_FURNACE_COOK.get(), SoundSource.BLOCKS, 1.0F, AlloyFurnaceTileEntity.this.level.getRandom().nextFloat() * 0.4F + 1.0F);
                     }
                     break;
                 case 1:
@@ -112,7 +112,7 @@ public class AlloyFurnaceTileEntity extends BaseContainerBlockEntity implements 
     private static final int[] SLOTS_HORIZONTAL = new int[]{9}; // why 9 still?
 
     public AlloyFurnaceTileEntity(BlockPos pos, BlockState state) {
-        super(KTMPRTileEntityTypes.ALLOY_FURNACE_TILE_ENTITY.get(), pos, state);
+        super(KtmTileEntityTypes.ALLOY_FURNACE_TILE_ENTITY.get(), pos, state);
     }
 
     public static void tickForge(Level level, BlockPos pos, BlockState state, AlloyFurnaceTileEntity AlloyFurnace) {
@@ -122,7 +122,7 @@ public class AlloyFurnaceTileEntity extends BaseContainerBlockEntity implements 
         // happened on server??
         if (!level.isClientSide) {
             // wm this here? this.inv? why not transfer this.inv here but this? => 1. this.inv has a diff type.
-            ForgingRecipe recipe = level.getRecipeManager().getRecipeFor(KTMPRRecipes.FORGING_RECIPE_TYPE, AlloyFurnace, level).orElse(null);
+            ForgingRecipe recipe = level.getRecipeManager().getRecipeFor(KtmRecipes.FORGING_RECIPE_TYPE, AlloyFurnace, level).orElse(null);
             // handled null recipe already
             AlloyFurnace.recipeValid = AlloyFurnace.canForge(recipe);
 
@@ -274,7 +274,7 @@ public class AlloyFurnaceTileEntity extends BaseContainerBlockEntity implements 
     }
 
     public boolean canTakeItemThroughFace(int index, ItemStack stack, Direction direction) {
-        return !stack.is(KTMPRTags.Items.FORGING_MATERIALS) && !stack.is(KTMPRTags.Items.FORGING_FUELS);
+        return !stack.is(KtmTags.Items.FORGING_MATERIALS) && !stack.is(KtmTags.Items.FORGING_FUELS);
     }
 
     public int getContainerSize() {

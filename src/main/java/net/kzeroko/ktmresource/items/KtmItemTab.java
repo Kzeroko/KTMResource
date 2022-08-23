@@ -1,6 +1,7 @@
 package net.kzeroko.ktmresource.items;
 
-import net.kzeroko.ktmresource.init.KTMPRBlocks;
+import net.kzeroko.ktmresource.init.KtmBlocks;
+import net.kzeroko.ktmresource.init.KtmItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
@@ -32,7 +33,7 @@ public class KtmItemTab {
 
     public static final CreativeModeTab KTMBLOCKS = new CreativeModeTab("ktmblocksTab") {
         @Override
-        public ItemStack makeIcon() { return new ItemStack(KTMPRBlocks.ALLOY_FURNACE.get());
+        public ItemStack makeIcon() { return new ItemStack(KtmBlocks.ALLOY_FURNACE.get());
         }
     };
 

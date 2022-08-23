@@ -8,10 +8,10 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class KTMPRTileEntityTypes {
+public class KtmTileEntityTypes {
     public static final DeferredRegister<BlockEntityType<?>> TILE_ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, KTMResource.MOD_ID);
 
-    public static final RegistryObject<BlockEntityType<AlloyFurnaceTileEntity>> ALLOY_FURNACE_TILE_ENTITY = TILE_ENTITY_TYPES.register("alloy_furnace_tile_entity", () -> BlockEntityType.Builder.of(AlloyFurnaceTileEntity::new, KTMPRBlocks.ALLOY_FURNACE.get()).build(null));
+    public static final RegistryObject<BlockEntityType<AlloyFurnaceTileEntity>> ALLOY_FURNACE_TILE_ENTITY = TILE_ENTITY_TYPES.register("alloy_furnace_tile_entity", () -> BlockEntityType.Builder.of(AlloyFurnaceTileEntity::new, KtmBlocks.ALLOY_FURNACE.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         TILE_ENTITY_TYPES.register(eventBus);

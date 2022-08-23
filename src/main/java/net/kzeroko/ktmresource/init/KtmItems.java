@@ -1,8 +1,11 @@
-package net.kzeroko.ktmresource.items;
+package net.kzeroko.ktmresource.init;
 
 import net.kzeroko.ktmresource.KTMResource;
-import net.kzeroko.ktmresource.fluids.KtmFluid;
+import net.kzeroko.ktmresource.fluids.KtmFluids;
 import net.kzeroko.ktmresource.items.AlloyFurnace.ForgingActivators;
+import net.kzeroko.ktmresource.items.KtmItemRarity;
+import net.kzeroko.ktmresource.items.KtmItemTab;
+import net.kzeroko.ktmresource.items.KtmItemTier;
 import net.kzeroko.ktmresource.items.custom.*;
 import net.kzeroko.ktmresource.items.lobby.*;
 import net.minecraft.world.item.*;
@@ -397,7 +400,7 @@ public class KtmItems {
     // Buckets
 
     public static final RegistryObject<Item> BLAZINGSOUL_BUCKET = ITEMS.register("blazingsoul_bucket",
-            ()-> new BucketItem(KtmFluid.BLAZINGSOUL,
+            ()-> new BucketItem(KtmFluids.BLAZINGSOUL,
                     new BucketItem.Properties().craftRemainder(Items.BUCKET).stacksTo(1).tab(KtmItemTab.KTMBUCKETS)));
 
     // Origins Icons

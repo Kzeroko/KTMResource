@@ -3,9 +3,8 @@ package net.kzeroko.ktmresource.init;
 import net.kzeroko.ktmresource.KTMResource;
 import net.kzeroko.ktmresource.blocks.AlloyFurnaceBlock;
 import net.kzeroko.ktmresource.blocks.UnbreakableBlockTemplate;
-import net.kzeroko.ktmresource.fluids.KtmFluid;
+import net.kzeroko.ktmresource.fluids.KtmFluids;
 import net.kzeroko.ktmresource.items.KtmItemTab;
-import net.kzeroko.ktmresource.items.KtmItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -20,18 +19,17 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-public class KTMPRBlocks {
+public class KtmBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, KTMResource.MOD_ID);
 
     // Fluid Blocks
     public static final RegistryObject<LiquidBlock> BLAZING_SOUL = BLOCKS
-            .register("blazingsoul_block", () -> new LiquidBlock(KtmFluid.BLAZINGSOUL,
+            .register("blazingsoul_block", () -> new LiquidBlock(KtmFluids.BLAZINGSOUL,
                     Block.Properties.of(Material.LAVA).lightLevel((state) -> {	return 15;	}).randomTicks().strength(100.0F).noDrops()));
 
-    // BLOCKS
+    // Blocks
     public static final RegistryObject<Block> ALLOY_FURNACE = registerBlockWithDefaultItem("alloy_furnace", () -> new AlloyFurnaceBlock(getProperties(Blocks.FURNACE)));
-    public static final RegistryObject<Block> UNBREAK_TMPLATE = registerBlockWithDefaultItem("unbreak_template", UnbreakableBlockTemplate::new);
-
+    public static final RegistryObject<Block> UNBREAK_TEMPLATE = registerBlockWithDefaultItem("unbreak_template", UnbreakableBlockTemplate::new);
 
     //*******************************************************************************************************************
 

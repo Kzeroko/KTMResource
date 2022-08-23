@@ -5,7 +5,7 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.kzeroko.ktmresource.KTMResource;
 import net.kzeroko.ktmresource.containers.AlloyFurnaceContainer;
-import net.kzeroko.ktmresource.network.KTMPRNetworkHandler;
+import net.kzeroko.ktmresource.network.KtmNetworkHandler;
 import net.kzeroko.ktmresource.network.UpdateAlloyFurnacePacket;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.AbstractButton;
@@ -102,7 +102,7 @@ public class AlloyFurnaceScreen extends AbstractContainerScreen<AlloyFurnaceCont
 //            MMNetworkHandler.sendToServer(new UpdateGemForgePacket(true));
             // here is RecipeValid => msg for SetForgeActive
             if (AlloyFurnaceScreen.this.menu.isRecipeValid()) {
-                KTMPRNetworkHandler.sendToServer(new UpdateAlloyFurnacePacket(true));
+                KtmNetworkHandler.sendToServer(new UpdateAlloyFurnacePacket(true));
             }
         }
 

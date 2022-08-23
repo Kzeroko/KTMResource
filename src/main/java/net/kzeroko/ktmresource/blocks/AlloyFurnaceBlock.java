@@ -1,7 +1,7 @@
 package net.kzeroko.ktmresource.blocks;
 
-import net.kzeroko.ktmresource.init.KTMPRBlocks;
-import net.kzeroko.ktmresource.init.KTMPRTileEntityTypes;
+import net.kzeroko.ktmresource.init.KtmBlocks;
+import net.kzeroko.ktmresource.init.KtmTileEntityTypes;
 import net.kzeroko.ktmresource.tileentities.AlloyFurnaceTileEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -68,7 +68,7 @@ public class AlloyFurnaceBlock extends BaseEntityBlock {
                 Containers.dropContents(worldIn, pos, (AlloyFurnaceTileEntity)tileentity);
                 worldIn.updateNeighbourForOutputSignal(pos, this);
             }
-            worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(KTMPRBlocks.ALLOY_FURNACE.get())));
+            worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(KtmBlocks.ALLOY_FURNACE.get())));
             super.onRemove(state, worldIn, pos, newState, isMoving);
         }
     }
@@ -100,7 +100,7 @@ public class AlloyFurnaceBlock extends BaseEntityBlock {
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntityType) {
         if (!level.isClientSide) {
-            return createTickerHelper(blockEntityType, KTMPRTileEntityTypes.ALLOY_FURNACE_TILE_ENTITY.get(), AlloyFurnaceTileEntity::tickForge);
+            return createTickerHelper(blockEntityType, KtmTileEntityTypes.ALLOY_FURNACE_TILE_ENTITY.get(), AlloyFurnaceTileEntity::tickForge);
         } else {
             return super.getTicker(level, state, blockEntityType);
         }
