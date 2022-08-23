@@ -231,5 +231,7 @@
   "item.ktmresource.citem_mining": "跃迁石——「矿区」",
   "item.ktmresource.citem_fishing": "跃迁石——「海岛」",
   "item.ktmresource.citem_spawn": "跃迁石——「原初」",
-  "item.ktmresource.citem_back": "跃迁石——「回归」"
+  "item.ktmresource.citem_back": "跃迁石——「回归」",
+
+  "item.ktmreosurce.unbreak_template": "不可破坏方块示例"
 }

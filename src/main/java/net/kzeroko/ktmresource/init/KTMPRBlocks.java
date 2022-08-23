@@ -2,6 +2,7 @@ package net.kzeroko.ktmresource.init;
 
 import net.kzeroko.ktmresource.KTMResource;
 import net.kzeroko.ktmresource.blocks.AlloyFurnaceBlock;
+import net.kzeroko.ktmresource.blocks.UnbreakableBlockTemplate;
 import net.kzeroko.ktmresource.fluids.KtmFluid;
 import net.kzeroko.ktmresource.items.KtmItemTab;
 import net.kzeroko.ktmresource.items.KtmItems;
@@ -29,6 +30,8 @@ public class KTMPRBlocks {
 
     // BLOCKS
     public static final RegistryObject<Block> ALLOY_FURNACE = registerBlockWithDefaultItem("alloy_furnace", () -> new AlloyFurnaceBlock(getProperties(Blocks.FURNACE)));
+    public static final RegistryObject<Block> UNBREAK_TMPLATE = registerBlockWithDefaultItem("unbreak_template", UnbreakableBlockTemplate::new);
+
 
     //*******************************************************************************************************************
 

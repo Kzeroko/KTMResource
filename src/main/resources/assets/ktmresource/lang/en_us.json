@@ -231,5 +231,7 @@
   "item.ktmresource.citem_mining": "Leap Stone——「Mining」",
   "item.ktmresource.citem_fishing": "Leap Stone——「Fishing」",
   "item.ktmresource.citem_spawn": "Leap Stone——「Spawn」",
-  "item.ktmresource.citem_back": "Leap Stone——「Back」"
+  "item.ktmresource.citem_back": "Leap Stone——「Back」",
+
+  "item.ktmreosurce.unbreak_template": "Unbreakable Block Template"
 }
