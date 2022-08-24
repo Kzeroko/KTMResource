@@ -2,6 +2,7 @@ package net.kzeroko.ktmresource;
 
 import com.mojang.logging.LogUtils;
 import net.kzeroko.ktmresource.client.KtmClient;
+import net.kzeroko.ktmresource.client.particles.KtmParticles;
 import net.kzeroko.ktmresource.fluids.KtmFluids;
 import net.kzeroko.ktmresource.init.*;
 import net.kzeroko.ktmresource.init.KtmItems;
@@ -39,6 +40,7 @@ public class KTMResource
         KtmContainerTypes.register(eventBus);
         KtmTileEntityTypes.register(eventBus);
         KtmSounds.register(eventBus);
+        KtmParticles.PARTICLES.register(eventBus);
 
         eventBus.addListener(this::setup);
 

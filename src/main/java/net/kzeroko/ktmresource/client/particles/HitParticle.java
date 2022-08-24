@@ -34,6 +34,11 @@ public abstract class HitParticle extends TextureSheetParticle {
     }
 
     @Override
+    public ParticleRenderType getRenderType() {
+        return ParticleRenderTypes.BLEND_LIGHTMAP_PARTICLE;
+    }
+
+    @Override
     public int getLightColor(float partialTick) {
         return 15728880;
     }
