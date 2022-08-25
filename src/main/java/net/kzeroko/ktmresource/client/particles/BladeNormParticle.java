@@ -27,11 +27,6 @@ public class BladeNormParticle extends HitParticle {
         this.roll = angle;
     }
 
-    @Override
-    public ParticleRenderType getRenderType() {
-        return null;
-    }
-
     @OnlyIn(Dist.CLIENT)
     public static class Provider implements ParticleProvider<SimpleParticleType> {
         private final SpriteSet spriteSet;
