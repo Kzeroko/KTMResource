@@ -114,7 +114,7 @@ public class KtmItems {
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.OUTER)));
 
     public static final RegistryObject<Item> BLADEOF_GREED = ITEMS.register("bladeof_greed",
-            () -> new BladeofGreed(KtmItemTier.ELITEPLUS, 0, -3.2f,
+            () -> new BladeofGreed(KtmItemTier.ELITEPLUS, 0, -3.0f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.VENOMOUS)));
 
     // Weapons - another

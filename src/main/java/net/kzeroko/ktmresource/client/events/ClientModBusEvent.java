@@ -1,8 +1,8 @@
 package net.kzeroko.ktmresource.client.events;
 
 import net.kzeroko.ktmresource.KTMResource;
-import net.kzeroko.ktmresource.client.particles.BladeNormParticle;
 import net.kzeroko.ktmresource.client.particles.KtmParticles;
+import net.kzeroko.ktmresource.client.particles.SlashFireParticle;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.ParticleEngine;
 import net.minecraftforge.api.distmarker.Dist;
@@ -21,6 +21,6 @@ public class ClientModBusEvent {
 		ParticleEngine particleEngine = mc.particleEngine;
     	// From Epic Fight mod
 		// particleEngine.register(KtmParticles.HIT_BLADE.get(), new HitCutParticle.Provider());
-    	particleEngine.register(KtmParticles.BLADENORM.get(), BladeNormParticle.Provider::new);
+		particleEngine.register(KtmParticles.SLASHFIRE.get(), SlashFireParticle.Provider::new);
     }
 }

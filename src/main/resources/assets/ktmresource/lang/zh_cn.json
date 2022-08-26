@@ -78,7 +78,7 @@
   "item.ktmresource.greendux_ingot": "绿精锭",
   "item.ktmresource.indigo_ingot": "靛蓝锭",
   "item.ktmresource.mountsakura_ingot": "崖樱锭",
-  "item.ktmresource.neptunium_ingot": "海王锭",
+  "item.ktmresource.neptunium_ingot": "海冥锭",
   "item.ktmresource.radialime_ingot": "普射锭",
   "item.ktmresource.rediron_ingot": "红铁锭",
   "item.ktmresource.shineblazing_ingot": "光耀锭",
@@ -215,7 +215,7 @@
 
   "item.ktmresource.alloy_furnace:remain_time": "剩余时间",
 
-  "item.ktmresource.oicon_human": "人类头像",
+  "item.ktmresource.oicon_human": "人族头像",
   "item.ktmresource.oicon_elf": "精灵族头像",
   "item.ktmresource.oicon_dwarf": "矮人族头像",
   "item.ktmresource.oicon_oni": "鬼妖族头像",

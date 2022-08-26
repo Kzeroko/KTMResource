@@ -10,5 +10,5 @@ import net.minecraftforge.registries.RegistryObject;
 public class KtmParticles {
 	public static final DeferredRegister<ParticleType<?>> PARTICLES = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, KTMResource.MOD_ID);
 
-	public static final RegistryObject<SimpleParticleType> BLADENORM = PARTICLES.register("bladenorm", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> SLASHFIRE = PARTICLES.register("slashfire", () -> new SimpleParticleType(true));
 }
