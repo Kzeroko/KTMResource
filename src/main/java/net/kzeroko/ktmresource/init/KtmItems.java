@@ -6,7 +6,11 @@ import net.kzeroko.ktmresource.items.AlloyFurnace.ForgingActivators;
 import net.kzeroko.ktmresource.items.KtmItemRarity;
 import net.kzeroko.ktmresource.items.KtmItemTab;
 import net.kzeroko.ktmresource.items.KtmItemTier;
-import net.kzeroko.ktmresource.items.custom.*;
+import net.kzeroko.ktmresource.items.custom.currencies.*;
+import net.kzeroko.ktmresource.items.custom.ingots.*;
+import net.kzeroko.ktmresource.items.custom.misc.*;
+import net.kzeroko.ktmresource.items.custom.repairkits.*;
+import net.kzeroko.ktmresource.items.custom.weapons.*;
 import net.kzeroko.ktmresource.items.lobby.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -65,6 +69,14 @@ public class KtmItems {
 
     public static final RegistryObject<Item> BLOODTHIRST_DAGGER = ITEMS.register("bloodthirst_dagger",
             () -> new BloodthirstDagger(KtmItemTier.ADVANCED, -2, -1.8f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
+
+    public static final RegistryObject<Item> FROST_PIERCER = ITEMS.register("frost_piercer",
+            () -> new FrostPiercer(KtmItemTier.ADVANCED, 6, -2.5f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
+
+    public static final RegistryObject<Item> CLAUDIAS_CRYSTALGREATSWORD = ITEMS.register("claudias_crystalgreatsword",
+            () -> new ClaudiasCrystalgreatsword(KtmItemTier.ADVANCED, 8, -3.0f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
 
     // Weapons - SAO
@@ -146,11 +158,15 @@ public class KtmItems {
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.OUTER)));
 
     public static final RegistryObject<Item> MISTILTEINN = ITEMS.register("mistilteinn",
-            () -> new Mistilteinn(KtmItemTier.LEGENDARY, 4, -2.6f,
+            () -> new Mistilteinn(KtmItemTier.LEGENDARY, -1, -2.6f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
 
     public static final RegistryObject<Item> EXCALIBUR_KAI = ITEMS.register("excalibur_kai",
             () -> new ExcaliburKai(KtmItemTier.LEGENDARY, -11, -2.5f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
+
+    public static final RegistryObject<Item> FARINGSTAR_BLADE = ITEMS.register("faringstar_blade",
+            () -> new FaringstarBlade(KtmItemTier.LEGENDARY, 2, -2.3f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
 
     // Weapons - mythic
@@ -223,6 +239,33 @@ public class KtmItems {
 
     public static final RegistryObject<Item> TOKEN_OFADVENTURER = ITEMS.register("token_ofadventurer",
             () -> new TokenofAdventurer(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> TOKEN_OFANOTHERADVENTURER = ITEMS.register("token_ofanotheradventurer",
+            () -> new TokenofAnotheradventurer(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(KtmItemRarity.LEGENDARY)));
+
+    public static final RegistryObject<Item> TOKEN_OFANOTHERSUNKENSOUL = ITEMS.register("token_ofanothersunkensoul",
+            () -> new TokenofAnothersunkensoul(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(KtmItemRarity.LEGENDARY)));
+
+    public static final RegistryObject<Item> TOKEN_OFCOPPER = ITEMS.register("token_ofcopper",
+            () -> new TokenofCopper(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(Rarity.COMMON)));
+
+    public static final RegistryObject<Item> TOKEN_OFENDER = ITEMS.register("token_ofender",
+            () -> new TokenofEnder(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(KtmItemRarity.LEGENDARY)));
+
+    public static final RegistryObject<Item> TOKEN_OFGOLD = ITEMS.register("token_ofgold",
+            () -> new TokenofGold(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(Rarity.RARE)));
+
+    public static final RegistryObject<Item> TOKEN_OFNETHER = ITEMS.register("token_ofnether",
+            () -> new TokenofNether(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(KtmItemRarity.LEGENDARY)));
+
+    public static final RegistryObject<Item> TOKEN_OFPLATINUM = ITEMS.register("token_ofplatinum",
+            () -> new TokenofPlatinum(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> TOKEN_OFSILVER = ITEMS.register("token_ofsilver",
+            () -> new TokenofSilver(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(Rarity.UNCOMMON)));
+
+    public static final RegistryObject<Item> TOKEN_OFSUNKENSOUL = ITEMS.register("token_ofsunkensoul",
+            () -> new TokenofSunkensoul(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(Rarity.EPIC)));
 
     // Repair Kits
 

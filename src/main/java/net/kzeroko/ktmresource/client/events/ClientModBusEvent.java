@@ -1,7 +1,7 @@
 package net.kzeroko.ktmresource.client.events;
 
 import net.kzeroko.ktmresource.KTMResource;
-import net.kzeroko.ktmresource.client.particles.KtmParticles;
+import net.kzeroko.ktmresource.init.KtmParticles;
 import net.kzeroko.ktmresource.client.particles.SlashFireParticle;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.ParticleEngine;

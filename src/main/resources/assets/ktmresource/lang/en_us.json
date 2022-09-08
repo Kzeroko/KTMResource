@@ -31,6 +31,9 @@
   "item.ktmresource.ebon_dagger": "Ebon Dagger",
   "item.ktmresource.lambent_light": "Lambent Light",
   "item.ktmresource.bladeof_greed": "Blade of Greed",
+  "item.ktmresource.frost_piercer": "Frost Piercer",
+  "item.ktmresource.claudias_crystalgreatsword": "Claudia's Crystal Greatsword",
+  "item.ktmresource.faringstar_blade": "Faring Star Blade",
 
   "item.ktmresource.core": "Core",
   "item.ktmresource.cast_iron_dust": "Cast Iron Dust",
@@ -60,6 +63,15 @@
   "item.ktmresource.bloodstone": "Bloodstone",
   "item.ktmresource.eternal_stone": "Eternal Stone",
   "item.ktmresource.token_ofadventurer": "Token of Adventurer",
+  "item.ktmresource.token_ofanotheradventurer": "Token of Another Adventurer",
+  "item.ktmresource.token_ofanothersunkensoul": "Token of Another Sunken Soul",
+  "item.ktmresource.token_ofcopper": "Copper Token",
+  "item.ktmresource.token_ofender": "Token of the end",
+  "item.ktmresource.token_ofgold": "Gold Token",
+  "item.ktmresource.token_ofnether": "Token of the Nether",
+  "item.ktmresource.token_ofplatinum": "Platinum Token",
+  "item.ktmresource.token_ofsilver": "Silver Token",
+  "item.ktmresource.token_ofsunkensoul": "Token of Sunken Soul",
 
   "item.ktmresource.andesite_lithic_flake": "Andesite Lithic Flake",
   "item.ktmresource.diorite_lithic_flake": "Diorite Lithic Flake",
@@ -139,6 +151,15 @@
   "tooltip.ktmresource.bloodstone": "A suspicious stone that has a certain connection to the hidden vampire clan",
   "tooltip.ktmresource.eternal_stone": "This stone has supreme affinity to weapons, tools and armors",
   "tooltip.ktmresource.token_ofadventurer": "This token has a touch of the Golden Dominance",
+  "tooltip.ktmresource.token_ofanotheradventurer": "This token has imbued the power of Golden Dominance",
+  "tooltip.ktmresource.token_ofanothersunkensoul": "This token holds the strong will of the voyagers",
+  "tooltip.ktmresource.token_ofcopper": "A low-tier currency used on the land of Erdas",
+  "tooltip.ktmresource.token_ofender": "The quintessential power of The End is radiating from this token",
+  "tooltip.ktmresource.token_ofgold": "A high-tier currency used on the land of Erdas",
+  "tooltip.ktmresource.token_ofnether": "This token exudes the quintessential power of the Blazing Land",
+  "tooltip.ktmresource.token_ofplatinum": "A high-tier currency used on the land of Erdas",
+  "tooltip.ktmresource.token_ofsilver": "A mid-tier currency used on the land of Erdas",
+  "tooltip.ktmresource.token_ofsunkensoul": "This token bears the faint wish of the voyagers",
 
   "desc.ktmresource.shift_info": "Hold『Shift』for item description",
   "desc.ktmresource.advanced_item": "✤Rare Item✤",
@@ -164,7 +185,7 @@
   "desc.ktmresource.mistilteinn": "————The demon sword Mistilteinn, and the demon sword Dainsleif are twin swords. They represent outer and inner power, yet the rift between dimensions maintains their coexistence",
   "desc.ktmresource.ama_no_murakumo":"——Ama no Murakumo is a divine sword, but it is also a demon sword. According to the legend, it is derived from the remains of the Yamata no Orochi. There are all sorts of unsolved mysteries about this weapon...",
   "desc.ktmresource.laevateinn": "——This demon sword is blessed by the fire spirit and is only after being recognized by the sword can you be qualified to use it. Laevateinn contains a powerful infernal flame, and the consequences will be unimaginable if all of them are released",
-  "desc.ktmresource.powered_scythe": "——This sickle that has been infused with energy can easily cut through enemies, a collection for every sickle wielder",
+  "desc.ktmresource.powered_scythe": "——This sickle that has been infused with energy can easily cut through enemies, a fine collection for every sickle wielder",
   "desc.ktmresource.aquaslashkai_a": "——Pure magic resonation. The longing that the twin sisters could not convey from generation to generation can only be turned into a gleam of sorrow on the crystal...",
   "desc.ktmresource.aquaslashkai_b": "——Pure magic resonation. The longing that the twin sisters could not convey from generation to generation can only be turned into a gleam of sorrow on the crystal...",
   "desc.ktmresource.rusty_halberd": "——Even if the weapon is stained and rusted, the soldiers are still riding like a thousand; how can the yearning from friends be passed on to those who are dying...",
@@ -189,6 +210,9 @@
   "desc.ktmresource.ebon_dagger": "——A dark dagger with a hilt made of a special wood blend. Popular among travelers due to its lightness",
   "desc.ktmresource.lambent_light": "——A masterpiece of rapier weapons, made for agile type users. Due to this weapon is hand forged, its hidden rarity surpasses any other rapier weapons",
   "desc.ktmresource.bladeof_greed":"——A tough giant sword built by the goblin army for the orc slaves. No man could easily wield this sword, unless he has reached to another level",
+  "desc.ktmresource.frost_piercer":"——A spear weapon full of frost essence, the body of the spear is loaded with elements of technology. Due to the precise construction of this weapon, a well-developed blueprint for forging is essential",
+  "desc.ktmresource.claudias_crystalgreatsword":"——This greatsword is the relic of a female knight in the distant past, and it was left on this land without being buried. According to records, the gems and runes on the blade allow the user to communicate with the moon spirit",
+  "desc.ktmresource.faringstar_blade":"——One of the masterpieces of the legendary swordsman Oreton, if anyone doubts the great achievements of the Cosmic Era, the power of the stars that remains on this sword is the best proof. 「May people never forget that history...」",
 
   "itemGroup.ktmresourceTab": "KTM resource - Misc",
   "itemGroup.ktmingotsTab": "KTM resource - Ingots",
@@ -233,5 +257,5 @@
   "item.ktmresource.citem_spawn": "Leap Stone——「Spawn」",
   "item.ktmresource.citem_back": "Leap Stone——「Back」",
 
-  "item.ktmreosurce.unbreak_template": "Unbreakable Block Template"
+  "item.ktmresource.unbreak_template": "Unbreakable Block Template"
 }

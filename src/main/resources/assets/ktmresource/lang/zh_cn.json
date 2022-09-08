@@ -31,6 +31,9 @@
   "item.ktmresource.ebon_dagger": "乌木短剑",
   "item.ktmresource.lambent_light": "闪烁之光",
   "item.ktmresource.bladeof_greed": "贪婪巨剑",
+  "item.ktmresource.frost_piercer": "冻土穿刺者",
+  "item.ktmresource.claudias_crystalgreatsword": "克劳蒂娅的水晶巨剑",
+  "item.ktmresource.faringstar_blade": "弥星之刃",
 
   "item.ktmresource.core": "核心",
   "item.ktmresource.cast_iron_dust": "铸铁粉",
@@ -49,7 +52,7 @@
   "item.ktmresource.darkmatter_heart": "幽暗之心",
   "item.ktmresource.holy_heart": "神圣之心",
   "item.ktmresource.nether_heart": "狱火之心",
-  "item.ktmresource.starforged_heart": "星锻之心",
+  "item.ktmresource.starforged_heart": "星辰之心",
   "item.ktmresource.uncommon_repairkit": "不凡修补件",
   "item.ktmresource.advanced_repairkit": "稀有修补件",
   "item.ktmresource.alien_repairkit": "外质修补件",
@@ -60,6 +63,15 @@
   "item.ktmresource.bloodstone": "血泪之石",
   "item.ktmresource.eternal_stone": "永恒石",
   "item.ktmresource.token_ofadventurer": "冒险者代币",
+  "item.ktmresource.token_ofanotheradventurer": "异相冒险者代币",
+  "item.ktmresource.token_ofanothersunkensoul": "异相溺魂代币",
+  "item.ktmresource.token_ofcopper": "铜币",
+  "item.ktmresource.token_ofender": "精髓末地代币",
+  "item.ktmresource.token_ofgold": "金币",
+  "item.ktmresource.token_ofnether": "精髓下界代币",
+  "item.ktmresource.token_ofplatinum": "白金币",
+  "item.ktmresource.token_ofsilver": "银币",
+  "item.ktmresource.token_ofsunkensoul": "溺魂代币",
 
   "item.ktmresource.andesite_lithic_flake": "安山岩石片",
   "item.ktmresource.diorite_lithic_flake": "闪长岩石片",
@@ -139,6 +151,15 @@
   "tooltip.ktmresource.bloodstone": "这块可疑的石头和潜藏的血族有着一定的联系",
   "tooltip.ktmresource.eternal_stone": "这块石头对武器、工具与盔甲具有至高的亲和力",
   "tooltip.ktmresource.token_ofadventurer": "这块代币上有着微弱的黄金统御之权能",
+  "tooltip.ktmresource.token_ofanotheradventurer": "这块代币上存在着强烈的黄金统御之权能",
+  "tooltip.ktmresource.token_ofanothersunkensoul": "这块代币上存留着航海者先驱的强烈意志",
+  "tooltip.ktmresource.token_ofcopper": "一种在厄尔达斯大陆流通的低阶货币",
+  "tooltip.ktmresource.token_ofender": "这块代币上散发着阵阵终末之地的精髓力量",
+  "tooltip.ktmresource.token_ofgold": "一种在厄尔达斯大陆流通的高阶货币",
+  "tooltip.ktmresource.token_ofnether": "这块代币上散发着阵阵炽炎之地的精髓力量",
+  "tooltip.ktmresource.token_ofplatinum": "一种在厄尔达斯大陆流通的高阶货币",
+  "tooltip.ktmresource.token_ofsilver": "一种在厄尔达斯大陆流通的中阶货币",
+  "tooltip.ktmresource.token_ofsunkensoul": "这块代币上有着航海者先驱们那微弱的遗愿",
 
   "desc.ktmresource.shift_info": "按住『Shift』显示物品概述",
   "desc.ktmresource.advanced_item": "✤稀有物品✤",
@@ -184,11 +205,14 @@
   "desc.ktmresource.thebladeofgolden": "——「你的勇气是斩开夜空的破晓之刃！而你的话语是拯救世界的称王之剑！」",
   "desc.ktmresource.fragrant_olivesword": "——一把精致又绝美的黄金佩剑，修长的剑锋上闪耀着荣光。据说在始源时代诞生于一颗神圣的金桂树，在转变为武器后获得了不朽的能力",
   "desc.ktmresource.elucidator": "——一把名副其实的极品武器，拥有着漆黑的剑身，无与伦比的硬度，以及超凡的手感。这把剑同时也是一个超稀有的掉落物品，对属性的要求较高",
-  "desc.ktmresource.dark_repulser": "——由极为稀有的水晶锻造而成，由于其特性剑身非常的轻薄，作为单手剑来说都有些不可思议。",
+  "desc.ktmresource.dark_repulser": "——由极为稀有的水晶锻造而成，由于其特性剑身非常的轻薄，作为单手剑来说都有些不可思议",
   "desc.ktmresource.demonicsword_gram": "——赤红色的双手魔剑，其装备等级之高让各路高手都望尘莫及。取名来自北欧神话中的屠龙之剑",
   "desc.ktmresource.ebon_dagger": "——一把暗色的短剑，剑柄是由一种特殊木材混合制作而成的。由于轻便性深受旅者们的青睐",
   "desc.ktmresource.lambent_light": "——精致到令人称之为杰作的突刺武器，非常适合身手敏捷的使用者。由于是手工锻造武器，它的隐藏稀有程度远超同类别武器",
   "desc.ktmresource.bladeof_greed":"——哥布林大军为兽人打造了一把坚韧无比的巨剑，一般人无法轻易挥舞这把武器，不过或许，某些力量型战士可以突破这个限制？……",
+  "desc.ktmresource.frost_piercer":"——寒冷气息缠身的长枪，枪身充满着科技感的要素。由于这把武器的精密构造，锻造时一个完善的设计图必不可缺",
+  "desc.ktmresource.claudias_crystalgreatsword":"——这把巨剑是古时一位女骑士的遗物，没有作为陪葬品的它就这么遗落在了这片大陆之中。根据记载，剑上的宝石与符文使得使用者能与月之精灵沟通",
+  "desc.ktmresource.faringstar_blade":"——传奇刀匠奥勒通的杰作之一，如果有人质疑过去星河时代的伟业，在这把剑身上散发的异相星辉之力正是最好的证明。「愿人们永不忘记那段历史……」",
 
   "itemGroup.ktmresourceTab": "KTM 资源 - 杂项",
   "itemGroup.ktmingotsTab": "KTM 资源 - 金属锭",
@@ -233,5 +257,5 @@
   "item.ktmresource.citem_spawn": "跃迁石——「原初」",
   "item.ktmresource.citem_back": "跃迁石——「回归」",
 
-  "item.ktmreosurce.unbreak_template": "不可破坏方块示例"
+  "item.ktmresource.unbreak_template": "不可破坏方块示例"
 }

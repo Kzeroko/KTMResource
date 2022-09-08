@@ -2,7 +2,7 @@ package net.kzeroko.ktmresource;
 
 import com.mojang.logging.LogUtils;
 import net.kzeroko.ktmresource.client.KtmClient;
-import net.kzeroko.ktmresource.client.particles.KtmParticles;
+import net.kzeroko.ktmresource.init.KtmParticles;
 import net.kzeroko.ktmresource.fluids.KtmFluids;
 import net.kzeroko.ktmresource.init.*;
 import net.kzeroko.ktmresource.init.KtmItems;

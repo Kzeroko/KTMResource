@@ -10,11 +10,11 @@ logoFile="logo.png"
 credits="Kzeroko, Qma_Feng, xiao_lanovo"
 authors="Kzeroko"
 description='''
-This mod will add custom resources such as weapons, items, fluids, foods and blocks
-that integrates mods in modpack KTM:PhantasmReality 1.18.2 Ver.
+Custom items, blocks and fluids for modpack KTM:PhantasmReality
 Which is a sequel to modpack KTM
-Interesting Fact: KTM=KenToMahou
-(Many of the features/contents are not implemented yet)
+
+KTM=KenToMahou (Swords and Magic)
+* Many of the features/contents are not implemented yet *
 '''
 
 [[dependencies.ktmresource]]
