@@ -129,6 +129,12 @@ public class KtmItems {
             () -> new BladeofGreed(KtmItemTier.ELITEPLUS, 0, -3.0f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.VENOMOUS)));
 
+    // Weapons - OVERLORD
+
+    public static final RegistryObject<Item> RAZOR_EDGE = ITEMS.register("razor_edge",
+            () -> new RazorEdge(KtmItemTier.ELITEPLUS, 8, -2.6f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.OUTER)));
+
     // Weapons - another
 
     public static final RegistryObject<Item> UNMOVABLE_DAWNLIGHT = ITEMS.register("unmovable_dawnlight",

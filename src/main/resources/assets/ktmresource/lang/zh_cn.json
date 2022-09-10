@@ -34,6 +34,7 @@
   "item.ktmresource.frost_piercer": "冻土穿刺者",
   "item.ktmresource.claudias_crystalgreatsword": "克劳蒂娅的水晶巨剑",
   "item.ktmresource.faringstar_blade": "弥星之刃",
+  "item.ktmresource.razor_edge": "剃刀之刃",
 
   "item.ktmresource.core": "核心",
   "item.ktmresource.cast_iron_dust": "铸铁粉",
@@ -210,9 +211,10 @@
   "desc.ktmresource.ebon_dagger": "——一把暗色的短剑，剑柄是由一种特殊木材混合制作而成的。由于轻便性深受旅者们的青睐",
   "desc.ktmresource.lambent_light": "——精致到令人称之为杰作的突刺武器，非常适合身手敏捷的使用者。由于是手工锻造武器，它的隐藏稀有程度远超同类别武器",
   "desc.ktmresource.bladeof_greed":"——哥布林大军为兽人打造了一把坚韧无比的巨剑，一般人无法轻易挥舞这把武器，不过或许，某些力量型战士可以突破这个限制？……",
-  "desc.ktmresource.frost_piercer":"——寒冷气息缠身的长枪，枪身充满着科技感的要素。由于这把武器的精密构造，锻造时一个完善的设计图必不可缺",
+  "desc.ktmresource.frost_piercer":"——寒冷气息缠身的战戟，表面充满着科技感的要素。由于这把武器的精密构造，锻造时一个完善的设计图必不可缺",
   "desc.ktmresource.claudias_crystalgreatsword":"——这把巨剑是古时一位女骑士的遗物，没有作为陪葬品的它就这么遗落在了这片大陆之中。根据记载，剑上的宝石与符文使得使用者能与月之精灵沟通",
   "desc.ktmresource.faringstar_blade":"——传奇刀匠奥勒通的杰作之一，如果有人质疑过去星河时代的伟业，在这把剑身上散发的异相星辉之力正是最好的证明。「愿人们永不忘记那段历史……」",
+  "desc.ktmresource.razor_edge": "——一把古久的国宝级武器，有传言说它来自一个已经灭亡的国家，剑刃锋利的程度可以像切纸一样切开铠甲。至于这是否是一件被魔法附魔过的武器，真相则不得而知了……",
 
   "itemGroup.ktmresourceTab": "KTM 资源 - 杂项",
   "itemGroup.ktmingotsTab": "KTM 资源 - 金属锭",
