@@ -22,5 +22,11 @@
   "result": {
     "item": "minecraft:coal"
   },
-  "forgingTime": 50
+  "enchantments": [
+    {
+      "enchantment":"minecraft:mending",
+      "lvl":1
+    }
+  ],
+  "forgingTime": 5000
 }

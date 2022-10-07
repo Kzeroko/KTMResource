@@ -18,7 +18,6 @@ public class KtmItemDesc {
     public static String UNIQUE_TIER = "desc.ktmresource.unique_item";
     public static String EXOTIC_TIER = "desc.ktmresource.exotic_item";
 
-
     public static ChatFormatting DESCRIPTION = ChatFormatting.ITALIC;
     public static ChatFormatting WEAPON_OUTER = ChatFormatting.AQUA;
     public static ChatFormatting WEAPON_ADVANCED = ChatFormatting.DARK_AQUA;

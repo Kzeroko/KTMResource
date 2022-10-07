@@ -28,13 +28,15 @@ public class ForgingRecipe implements IForgingRecipe {
     private final ResourceLocation recipeId;
     private final NonNullList<Ingredient> catalysts;
     private final NonNullList<Ingredient> recipeGems;
+    private final NonNullList<Pair<Enchantment,Integer>> enchantments;
     private final ItemStack result;
     public Integer forgingTime;
 
-    public ForgingRecipe(ResourceLocation recipeId, NonNullList<Ingredient> catalysts, NonNullList<Ingredient> recipeGems, ItemStack result, Integer forgingTime) {
+    public ForgingRecipe(ResourceLocation recipeId, NonNullList<Ingredient> catalysts, NonNullList<Ingredient> recipeGems, NonNullList<Pair<Enchantment,Integer>> enchantments, ItemStack result, Integer forgingTime) {
         this.recipeId = recipeId;
         this.catalysts = catalysts;
         this.recipeGems = recipeGems;
+        this.enchantments = enchantments;
         this.result = result;
         this.forgingTime = forgingTime;
     }
@@ -78,7 +80,13 @@ public class ForgingRecipe implements IForgingRecipe {
     }
 
     public ItemStack getDefaultedOutput() {
-        return this.result.copy();
+        ItemStack itemstack = this.result.copy();
+
+        for (Pair<Enchantment, Integer> enchantment : this.enchantments) {
+            itemstack.enchant(enchantment.getFirst(), enchantment.getSecond());
+        }
+
+        return itemstack;
     }
 
     // TBD
@@ -88,6 +96,10 @@ public class ForgingRecipe implements IForgingRecipe {
         CompoundTag compoundnbt = inv.getItem(0).getTag();
         if (compoundnbt != null) {
             itemstack.setTag(compoundnbt.copy());
+        }
+
+        for (Pair<Enchantment, Integer> enchantment : this.enchantments) {
+            itemstack.enchant(enchantment.getFirst(), enchantment.getSecond());
         }
 
         return itemstack;
@@ -152,6 +164,7 @@ public class ForgingRecipe implements IForgingRecipe {
             NonNullList<Ingredient> gemList = readIngredients(GsonHelper.getAsJsonArray(json, "gems"));
             // could they use the same procedure? seem ok since no specific codes were used.
             NonNullList<Ingredient> catalystList = readIngredients(GsonHelper.getAsJsonArray(json, "catalysts"));
+            NonNullList<Pair<Enchantment,Integer>> enchantmentList = readEnchantments(GsonHelper.getAsJsonArray(json, "enchantments"));
 
             if (gemList.isEmpty()) {
                 throw new JsonParseException("No gems for forging recipe");
@@ -165,7 +178,7 @@ public class ForgingRecipe implements IForgingRecipe {
                 ItemStack result = ForgingRecipe.deserializeItem(GsonHelper.getAsJsonObject(json, "result"));
                 Integer forgingTime = GsonHelper.getAsInt(json, "forgingTime");
 
-                return new ForgingRecipe(recipeId, catalystList, gemList, result, forgingTime);
+                return new ForgingRecipe(recipeId, catalystList, gemList, enchantmentList, result, forgingTime);
             }
         }
 
@@ -180,6 +193,39 @@ public class ForgingRecipe implements IForgingRecipe {
             }
 
             return nonnulllist;
+        }
+
+        private static NonNullList<Pair<Enchantment,Integer>> readEnchantments(JsonArray enchantmentArray) {
+            NonNullList<Pair<Enchantment,Integer>> enchantments = NonNullList.create();
+
+            for(int i = 0; i < enchantmentArray.size(); ++i) {
+                Enchantment enchantment = parseEnchantment(GsonHelper.convertToJsonObject(enchantmentArray.get(i),"enchantment"));
+                int lvl = parseEnchantmentLevel(GsonHelper.convertToJsonObject(enchantmentArray.get(i), "lvl"));
+
+                enchantments.add(new Pair<>(enchantment, lvl));
+            }
+
+            return enchantments;
+        }
+
+        private static Enchantment parseEnchantment(JsonObject object) {
+            if (object.isJsonArray()) {
+                throw new JsonSyntaxException("Expected object to be a single Enchantment");
+            }
+            Enchantment enchantment = ForgeRegistries.ENCHANTMENTS.getValue(new ResourceLocation(GsonHelper.getAsString(object, "enchantment")));
+
+            if (enchantment == null) {
+                throw new JsonSyntaxException("No valid Enchantment name supplied");
+            }
+
+            return enchantment;
+        }
+
+        private static int parseEnchantmentLevel(JsonObject object) {
+            if (object.isJsonArray()) {
+                throw new JsonSyntaxException("Expected object to be a single integer");
+            }
+            return GsonHelper.getAsInt(object, "lvl");
         }
 
         @Nullable
@@ -215,7 +261,7 @@ public class ForgingRecipe implements IForgingRecipe {
             ItemStack result = buffer.readItem();
             Integer forgingTime = buffer.readInt();
 
-            return new ForgingRecipe(recipeId, catalystList, gemList, result, forgingTime);
+            return new ForgingRecipe(recipeId, catalystList, gemList, enchantmentList, result, forgingTime);
         }
 
         @Override
@@ -225,6 +271,13 @@ public class ForgingRecipe implements IForgingRecipe {
             for(Ingredient ingredient : recipe.recipeGems) {
                 ingredient.toNetwork(buffer);
             }
+
+            buffer.writeVarInt(recipe.enchantments.size());
+            for(Pair<Enchantment,Integer> enchantment : recipe.enchantments) {
+                buffer.writeResourceLocation(enchantment.getFirst().getRegistryName());
+                buffer.writeVarInt(enchantment.getSecond());
+            }
+
             // save fuels
             buffer.writeVarInt(recipe.catalysts.size());
             for(Ingredient ingredient : recipe.catalysts) {

@@ -6,11 +6,15 @@ import net.kzeroko.ktmresource.items.AlloyFurnace.ForgingActivators;
 import net.kzeroko.ktmresource.items.KtmItemRarity;
 import net.kzeroko.ktmresource.items.KtmItemTab;
 import net.kzeroko.ktmresource.items.KtmItemTier;
+import net.kzeroko.ktmresource.items.custom.blueprints.SimpleBlueprint;
 import net.kzeroko.ktmresource.items.custom.currencies.*;
 import net.kzeroko.ktmresource.items.custom.ingots.*;
 import net.kzeroko.ktmresource.items.custom.misc.*;
 import net.kzeroko.ktmresource.items.custom.repairkits.*;
 import net.kzeroko.ktmresource.items.custom.weapons.*;
+import net.kzeroko.ktmresource.items.custom.weapons.vanilla.VanillaCurvedswords;
+import net.kzeroko.ktmresource.items.custom.weapons.vanilla.VanillaScythes;
+import net.kzeroko.ktmresource.items.custom.weapons.vanilla.VanillaTangswords;
 import net.kzeroko.ktmresource.items.lobby.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -31,6 +35,60 @@ public class KtmItems {
 
     public static final RegistryObject<Item> WOODEN_KATANA = ITEMS.register("wooden_katana",
             () -> new SwordItem(KtmItemTier.BASIC, 0, -2.6f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
+
+    // Weapons - vanilla plus
+
+    public static final RegistryObject<Item> STONE_SCYTHE = ITEMS.register("stone_scythe",
+            () -> new VanillaScythes(KtmItemTier.STONE, 0, -2.5f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
+
+    public static final RegistryObject<Item> IRON_SCYTHE = ITEMS.register("iron_scythe",
+            () -> new VanillaScythes(KtmItemTier.IRON, 0, -2.5f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
+
+    public static final RegistryObject<Item> GOLDEN_SCYTHE = ITEMS.register("golden_scythe",
+            () -> new VanillaScythes(KtmItemTier.GOLD, 0, -2.5f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
+
+    public static final RegistryObject<Item> DIAMOND_SCYTHE = ITEMS.register("diamond_scythe",
+            () -> new VanillaScythes(KtmItemTier.DIAMOND, 0, -2.5f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
+
+    public static final RegistryObject<Item> NETHERITE_SCYTHE = ITEMS.register("netherite_scythe",
+            () -> new VanillaScythes(KtmItemTier.NETHERITE, 0, -2.5f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
+
+    public static final RegistryObject<Item> IRON_TANGSWORD = ITEMS.register("iron_tangsword",
+            () -> new VanillaTangswords(KtmItemTier.IRON, 1, -2.4f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
+
+    public static final RegistryObject<Item> DIAMOND_TANGSWORD = ITEMS.register("diamond_tangsword",
+            () -> new VanillaTangswords(KtmItemTier.DIAMOND, 1, -2.4f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
+
+    public static final RegistryObject<Item> NETHERITE_TANGSWORD = ITEMS.register("netherite_tangsword",
+            () -> new VanillaTangswords(KtmItemTier.NETHERITE, 1, -2.4f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
+
+    public static final RegistryObject<Item> STONE_CURVEDSWORD = ITEMS.register("stone_curvedsword",
+            () -> new VanillaCurvedswords(KtmItemTier.STONE, 3, -2.7f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
+
+    public static final RegistryObject<Item> IRON_CURVEDSWORD = ITEMS.register("iron_curvedsword",
+            () -> new VanillaCurvedswords(KtmItemTier.IRON, 3, -2.7f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
+
+    public static final RegistryObject<Item> GOLDEN_CURVEDSWORD = ITEMS.register("golden_curvedsword",
+            () -> new VanillaCurvedswords(KtmItemTier.GOLD, 3, -2.6f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
+
+    public static final RegistryObject<Item> DIAMOND_CURVEDSWORD = ITEMS.register("diamond_curvedsword",
+            () -> new VanillaCurvedswords(KtmItemTier.DIAMOND, 3, -2.7f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
+
+    public static final RegistryObject<Item> NETHERITE_CURVEDSWORD = ITEMS.register("netherite_curvedsword",
+            () -> new VanillaCurvedswords(KtmItemTier.NETHERITE, 3, -2.6f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS)));
 
     // Weapons - advanced
@@ -122,7 +180,7 @@ public class KtmItems {
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
 
     public static final RegistryObject<Item> LAMBENT_LIGHT = ITEMS.register("lambent_light",
-            () -> new LambentLight(KtmItemTier.ELITEPLUS, -4, -0.5f,
+            () -> new LambentLight(KtmItemTier.ELITEPLUS, -4, -1.8f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.OUTER)));
 
     public static final RegistryObject<Item> BLADEOF_GREED = ITEMS.register("bladeof_greed",
@@ -135,6 +193,14 @@ public class KtmItems {
             () -> new RazorEdge(KtmItemTier.ELITEPLUS, 8, -2.6f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.OUTER)));
 
+    public static final RegistryObject<Item> SHADOWOF_YGGDRASIL = ITEMS.register("shadowof_yggdrasil",
+            () -> new ShadowofYggdrasil(KtmItemTier.MYTHICAL, 4, -3.0f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
+
+    public static final RegistryObject<Item> SPUIT_LANCE = ITEMS.register("spuit_lance",
+            () -> new SpuitLance(KtmItemTier.MYTHICAL, -1, -2.5f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.MONSTROUS)));
+
     // Weapons - another
 
     public static final RegistryObject<Item> UNMOVABLE_DAWNLIGHT = ITEMS.register("unmovable_dawnlight",
@@ -144,6 +210,22 @@ public class KtmItems {
     public static final RegistryObject<Item> MANIACAL_DUSK = ITEMS.register("maniacal_dusk",
             () -> new ManiacalDusk(KtmItemTier.ANOTHER, 6, -2.7f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.TREASURY)));
+
+    public static final RegistryObject<Item> KISARAS_DEVILSWORD = ITEMS.register("kisaras_devilsword",
+            () -> new KisarasDevilsword(KtmItemTier.ANOTHER, 4, -2.4f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.FORBIDDEN)));
+
+    public static final RegistryObject<Item> KANNAS_DEVILSPEAR = ITEMS.register("kannas_devilspear",
+            () -> new KannasDevilspear(KtmItemTier.ANOTHER, 4, -2.4f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.OUTER)));
+
+    public static final RegistryObject<Item> HF_MURAMASA = ITEMS.register("hf_muramasa",
+            () -> new HfMuramasa(KtmItemTier.ANOTHER, 2, -2.3f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.FORBIDDEN)));
+
+    public static final RegistryObject<Item> TOHKAS_SANDALPHON = ITEMS.register("tohkas_sandalphon",
+            () -> new TohkasSandalphon(KtmItemTier.ANOTHER, 5, -2.7f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
 
     // Weapons - legendary
 
@@ -173,6 +255,10 @@ public class KtmItems {
 
     public static final RegistryObject<Item> FARINGSTAR_BLADE = ITEMS.register("faringstar_blade",
             () -> new FaringstarBlade(KtmItemTier.LEGENDARY, 2, -2.3f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
+
+    public static final RegistryObject<Item> ARMAGEDDON = ITEMS.register("armageddon",
+            () -> new Armageddon(KtmItemTier.LEGENDARY, 7, -2.4f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.LEGENDARY)));
 
     // Weapons - mythic
@@ -332,6 +418,20 @@ public class KtmItems {
 
     public static final RegistryObject<Item> ELECTRO_DRAGON_CRYSTAL = ITEMS.register("electro_dragon_crystal",
             () -> new Item(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(Rarity.RARE)));
+
+    // Blueprints and others
+
+    public static final RegistryObject<Item> BLUEPRINT_UNKNOWN = ITEMS.register("blueprint_unknown",
+            () -> new SimpleBlueprint(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(KtmItemRarity.OUTER)));
+
+    public static final RegistryObject<Item> BLUEPRINT_ACCESSORY = ITEMS.register("blueprint_accessory",
+            () -> new SimpleBlueprint(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(KtmItemRarity.OUTER)));
+
+    public static final RegistryObject<Item> BLUEPRINT_ARMOR = ITEMS.register("blueprint_armor",
+            () -> new SimpleBlueprint(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(KtmItemRarity.OUTER)));
+
+    public static final RegistryObject<Item> BLUEPRINT_WEAPON = ITEMS.register("blueprint_weapon",
+            () -> new SimpleBlueprint(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(KtmItemRarity.OUTER)));
 
     // Tier 3 Ingot Items
 

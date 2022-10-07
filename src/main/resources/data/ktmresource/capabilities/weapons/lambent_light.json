@@ -6,14 +6,14 @@
       "armor_negation":11.0,
       "impact":1.7,
       "max_strikes":1,
-      "speed_bonus":0.0
+      "speed_bonus":0
     },
     "sao_single_sword":
     {
       "armor_negation":11.0,
       "impact":1.7,
       "max_strikes":1,
-      "speed_bonus":1
+      "speed_bonus":0
     },
     "sao_dual_sword":
     {

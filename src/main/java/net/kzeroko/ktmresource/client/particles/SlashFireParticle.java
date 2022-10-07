@@ -17,7 +17,7 @@ public class SlashFireParticle extends HitParticle {
         this.rCol = 1.0F;
         this.gCol = 1.0F;
         this.bCol = 1.0F;
-        this.quadSize = 2.2F;
+        this.quadSize = 2.0F;
         this.lifetime = 6;
 
         // Random rand = new Random();

@@ -1,0 +1,47 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "ktmresource:item/weapons/vanilla/diamond_curvedsword"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-45, -90, 0],
+			"translation": [0, 7.75, 0.75],
+			"scale": [1.69, 1.69, 0.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-45, 90, 0],
+			"translation": [0, 7.75, 0.75],
+			"scale": [1.69, 1.69, 0.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [-90, -90, -35],
+			"translation": [1, 6.25, 1],
+			"scale": [1.05, 1.05, 0.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-90, 90, 35],
+			"translation": [1, 6.25, 1],
+			"scale": [1.05, 1.05, 0.5]
+		},
+		"ground": {
+			"rotation": [0, 0, 90],
+			"translation": [0, 4, 0],
+			"scale": [1, 1, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -180, 90],
+			"scale": [1, 1, 0.5]
+		},
+		"head": {
+			"rotation": [0, 0, -45],
+			"translation": [3.25, 8.5, 0],
+			"scale": [1.69, 1.69, 0.5]
+		},
+		"fixed": {
+			"rotation": [0, -180, 90],
+			"scale": [1, 1, 0.5]
+		}
+	}
+}

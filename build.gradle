@@ -20,7 +20,7 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 ext.config = parseConfig(file('build.properties'))
 
 
-version = '1.18.2-0.1Beta-Preview6'
+version = '1.18.2-0.1Beta-Preview7'
 group = 'net.kzeroko.ktmresource' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'ktmresource'
 

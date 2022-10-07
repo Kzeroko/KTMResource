@@ -1,4 +1,18 @@
 {
+  "item.ktmresource.stone_scythe": "石镰刀",
+  "item.ktmresource.iron_scythe": "铁镰刀",
+  "item.ktmresource.golden_scythe": "金镰刀",
+  "item.ktmresource.diamond_scythe": "钻石镰刀",
+  "item.ktmresource.netherite_scythe": "下界合金镰刀",
+  "item.ktmresource.iron_tangsword": "铁唐刀",
+  "item.ktmresource.diamond_tangsword": "钻石唐刀",
+  "item.ktmresource.netherite_tangsword": "下界合金唐刀",
+  "item.ktmresource.stone_curvedsword": "石曲剑",
+  "item.ktmresource.iron_curvedsword": "铁曲剑",
+  "item.ktmresource.golden_curvedsword": "金曲剑",
+  "item.ktmresource.diamond_curvedsword": "钻石曲剑",
+  "item.ktmresource.netherite_curvedsword": "下界合金曲剑",
+
   "item.ktmresource.wooden_bat": "木大棒",
   "item.ktmresource.wooden_katana": "木刀",
   "item.ktmresource.mistilteinn": "米斯特汀",
@@ -35,6 +49,13 @@
   "item.ktmresource.claudias_crystalgreatsword": "克劳蒂娅的水晶巨剑",
   "item.ktmresource.faringstar_blade": "弥星之刃",
   "item.ktmresource.razor_edge": "剃刀之刃",
+  "item.ktmresource.shadowof_yggdrasil": "世界树之影",
+  "item.ktmresource.spuit_lance": "滴管长枪",
+  "item.ktmresource.armageddon": "灭天圣劫",
+  "item.ktmresource.kisaras_devilsword": "木更的退魔之剑",
+  "item.ktmresource.kannas_devilspear": "环奈的退魔之枪",
+  "item.ktmresource.hf_muramasa": "高频村雨刀",
+  "item.ktmresource.tohkas_sandalphon": "十香的鏖杀公",
 
   "item.ktmresource.core": "核心",
   "item.ktmresource.cast_iron_dust": "铸铁粉",
@@ -86,6 +107,11 @@
   "item.ktmresource.fire_dragon_crystal": "火龙结晶",
   "item.ktmresource.ice_dragon_crystal": "冰龙结晶",
   "item.ktmresource.whitewyrm_dragon_crystal": "白龙结晶",
+
+  "item.ktmresource.blueprint_unknown": "蓝图 - 未知",
+  "item.ktmresource.blueprint_accessory": "蓝图 - 饰品",
+  "item.ktmresource.blueprint_armor": "蓝图 - 护甲",
+  "item.ktmresource.blueprint_weapon": "蓝图 - 武器",
 
   "item.ktmresource.cyadia_ingot": "青钻锭",
   "item.ktmresource.greendux_ingot": "绿精锭",
@@ -161,7 +187,11 @@
   "tooltip.ktmresource.token_ofplatinum": "一种在厄尔达斯大陆流通的高阶货币",
   "tooltip.ktmresource.token_ofsilver": "一种在厄尔达斯大陆流通的中阶货币",
   "tooltip.ktmresource.token_ofsunkensoul": "这块代币上有着航海者先驱们那微弱的遗愿",
+  "tooltip.ktmresource.simpleblueprint": "一张简易的蓝图模板",
 
+  "desc.ktmresource.vanilla_scythes": "镰刀比起剑类武器能同时攻击更多敌人",
+  "desc.ktmresource.vanilla_tangswords": "非常锐利的武器，拥有别具一格的破甲能力",
+  "desc.ktmresource.vanilla_curvedswords": "一种更容易挥舞的改良型大剑武器",
   "desc.ktmresource.shift_info": "按住『Shift』显示物品概述",
   "desc.ktmresource.advanced_item": "✤稀有物品✤",
   "desc.ktmresource.advanced_weapons": "「一把适合战斗的精良武器」",
@@ -215,6 +245,13 @@
   "desc.ktmresource.claudias_crystalgreatsword":"——这把巨剑是古时一位女骑士的遗物，没有作为陪葬品的它就这么遗落在了这片大陆之中。根据记载，剑上的宝石与符文使得使用者能与月之精灵沟通",
   "desc.ktmresource.faringstar_blade":"——传奇刀匠奥勒通的杰作之一，如果有人质疑过去星河时代的伟业，在这把剑身上散发的异相星辉之力正是最好的证明。「愿人们永不忘记那段历史……」",
   "desc.ktmresource.razor_edge": "——一把古久的国宝级武器，有传言说它来自一个已经灭亡的国家，剑刃锋利的程度可以像切纸一样切开铠甲。至于这是否是一件被魔法附魔过的武器，真相则不得而知了……",
+  "desc.ktmresource.shadowof_yggdrasil": "——武器名诉说着它曾是传说中世界树的一根树枝。这把法杖不仅拥有能疏导与汇聚魔力的力量，那出奇的重量还使得它能轻松的敲碎人类的头骨",
+  "desc.ktmresource.spuit_lance": "——由至尊打造的神器级武器，是一把外形颇为奇特的长枪，能力是攻击造成伤害的百分比来治疗使用者自身。面对拿着这把武器的敌人，颤栗吧，因为你将面对真正的恐怖……",
+  "desc.ktmresource.armageddon": "——过去司掌光明的飞翼族君王所持有的裁决之剑，剑的周围闪耀着蓝色的火光波纹。由古老装置激活后获得全盛时期的力量，被这把剑击中会获得极为严重的负面效果",
+  "desc.ktmresource.kisaras_devilsword": "——退魔武器中的数把之一，来自一个未知的维度。剑的造型与材质都很奇特，看上去并非出自人类之手？……\n§c「断章·记忆」",
+  "desc.ktmresource.kannas_devilspear": "——退魔武器中的数把之一，来自一个未知的维度。枪的全身发出微弱的诡异蓝光，看上去并非出自人类之手？……\n§b「断章·尘封」",
+  "desc.ktmresource.hf_muramasa": "——代代相传的宝刀，其上继承了使用者战斗的意志，使得这把刀的价值又上身了一个层次\n§4「我仅确信一事，此地将证鲜血纷飞四溅！」",
+  "desc.ktmresource.tohkas_sandalphon": "——王座中的神秘大剑，被未知力量所呼唤而显现。这把剑的未知权能只有这把剑真正的主人才能发挥出来\n§d「灵装十番·公主」",
 
   "itemGroup.ktmresourceTab": "KTM 资源 - 杂项",
   "itemGroup.ktmingotsTab": "KTM 资源 - 金属锭",
@@ -259,5 +296,5 @@
   "item.ktmresource.citem_spawn": "跃迁石——「原初」",
   "item.ktmresource.citem_back": "跃迁石——「回归」",
 
-  "item.ktmresource.unbreak_template": "不可破坏方块示例"
+  "block.ktmresource.unbreak_template": "不可破坏方块示例"
 }

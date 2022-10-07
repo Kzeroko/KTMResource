@@ -29,7 +29,13 @@
     }
   ],
   "result": {
-    "item": "minecraft:diamond"
+    "item": "minecraft:diamond_sword"
   },
+  "enchantments": [
+    {
+      "enchantment":"minecraft:mending",
+      "lvl":1
+    }
+  ],
   "forgingTime": 100
 }

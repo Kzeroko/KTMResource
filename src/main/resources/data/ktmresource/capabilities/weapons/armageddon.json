@@ -1,0 +1,34 @@
+{
+  "attributes":
+  {
+    "common":
+    {
+      "armor_negation":39.0,
+      "impact":2.5,
+      "max_strikes":3,
+      "speed_bonus":0
+    },
+    "sao_single_sword":
+    {
+      "armor_negation":39.0,
+      "impact":2.5,
+      "max_strikes":3,
+      "speed_bonus":0
+    },
+    "sao_dual_sword":
+    {
+      "armor_negation":39.0,
+      "impact":5.5,
+      "max_strikes":6,
+      "speed_bonus":4.4
+    },
+    "sao_dual_sword_locked":
+    {
+      "armor_negation":39.0,
+      "impact":5.5,
+      "max_strikes":6,
+      "speed_bonus":4.4
+    }
+  },
+  "type":"sao_single_sword"
+}
