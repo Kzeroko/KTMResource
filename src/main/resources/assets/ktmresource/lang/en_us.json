@@ -113,6 +113,8 @@
   "item.ktmresource.blueprint_armor": "Blueprint - Armor",
   "item.ktmresource.blueprint_weapon": "Blueprint - Weapon",
 
+  "item.ktmresource.sword_template": "Sword Template",
+
   "item.ktmresource.cyadia_ingot": "Cyadia Ingot",
   "item.ktmresource.greendux_ingot": "Greendux Ingot",
   "item.ktmresource.indigo_ingot": "Indigo Ingot",
@@ -188,6 +190,7 @@
   "tooltip.ktmresource.token_ofsilver": "A mid-tier currency used on the land of Erdas",
   "tooltip.ktmresource.token_ofsunkensoul": "This token bears the faint wish of the voyagers",
   "tooltip.ktmresource.simpleblueprint": "A simple blueprint template",
+  "tooltip.ktmresource.sword_template": "A simple sword weapon template",
 
   "desc.ktmresource.vanilla_scythes": "Compare to swords, scythes can attack more enemies at once",
   "desc.ktmresource.vanilla_tangswords": "Very sharp weapon with unique armor piercing ability",

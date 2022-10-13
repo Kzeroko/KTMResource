@@ -31,5 +31,12 @@ KTM=KenToMahou (Swords and Magic)
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.ktmresource]]
+    modId="epicfight"
+    mandatory=true
+    versionRange="[18.3.1,18.4.0)"
+    ordering="BEFORE"
+    side="BOTH"
+
 [modproperties.ktmresource]
     catalogueImageIcon="icon.png"

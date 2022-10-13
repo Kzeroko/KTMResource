@@ -3,11 +3,13 @@ buildscript {
         // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
         maven { url = 'https://maven.minecraftforge.net' }
         maven { url = 'https://maven.parchmentmc.org' }
+        maven { url = "https://repo.spongepowered.org/maven" }
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
         classpath 'org.parchmentmc:librarian:1.+'
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
     }
 }
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
@@ -15,6 +17,7 @@ plugins {
 }
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
+apply plugin: 'org.spongepowered.mixin'
 
 // Try to modify the various versions in the config file
 ext.config = parseConfig(file('build.properties'))
@@ -37,6 +40,7 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
             property 'forge.enabledGameTestNamespaces', 'ktmresource'
+            args '-mixin.config=ktmresource.mixins.json'
             mods {
                 ktmresource {
                     source sourceSets.main
@@ -96,9 +100,11 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.1.54'
+    minecraft 'net.minecraftforge:forge:1.18.2-40.1.80'
     compileOnly fg.deobf("mezz.jei:jei-${config.MINECRAFT_VERSION}:${config.JEI_VERSION}:api")
     runtimeOnly fg.deobf("mezz.jei:jei-${config.MINECRAFT_VERSION}:${config.JEI_VERSION}")
+
+    implementation fg.deobf("curse.maven:epicfightmod-405076:4018756")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
@@ -111,11 +117,11 @@ jar {
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "ktmresourcesareus",
-                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+                "MixinConfigs": "ktmresource.mixins.json"
         ])
     }
 }
-
 
 jar.finalizedBy('reobfJar')
 

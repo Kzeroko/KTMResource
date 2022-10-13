@@ -17,6 +17,7 @@ public class KtmEvents {
     @SubscribeEvent
     public static void registerRecipeTypes(RegistryEvent.Register<RecipeSerializer<?>> event) {
         Registry.register(Registry.RECIPE_TYPE, ForgingRecipe.TYPE_ID, KtmRecipes.FORGING_RECIPE_TYPE);
+        Registry.register(Registry.RECIPE_TYPE, ForgingRecipe.TYPE_ID, KtmRecipes.FORGING_RECIPE_TYPE);
     }
 
 }

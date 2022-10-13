@@ -17,11 +17,11 @@ public class BlueStrikeParticle extends HitParticle {
         this.rCol = 1.0F;
         this.gCol = 1.0F;
         this.bCol = 1.0F;
-        this.quadSize = 1.5F;
-        this.lifetime = 6;
+        this.quadSize = 0.6F;
+        this.lifetime = 18;
 
         Random rand = new Random();
-        float angle = (float)Math.toRadians(rand.nextFloat() * 90.0F);
+        float angle = (float)Math.toRadians(rand.nextFloat() * 120.0F);
         this.oRoll = angle;
         this.roll = angle;
     }

@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "minecraft:iron_ingot",
-    "ktmresource:electro_dragon_crystal"
+    "ktmresource:sword_template",
+    "ktmresource:cyadia_ingot",
+    "ktmresource:indigo_ingot",
+    "alltheores:sapphire",
+    "alltheores:diamond_rod"
   ]
 }

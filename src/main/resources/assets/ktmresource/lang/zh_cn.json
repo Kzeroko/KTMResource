@@ -113,6 +113,8 @@
   "item.ktmresource.blueprint_armor": "蓝图 - 护甲",
   "item.ktmresource.blueprint_weapon": "蓝图 - 武器",
 
+  "item.ktmresource.sword_template": "剑基础模具",
+
   "item.ktmresource.cyadia_ingot": "青钻锭",
   "item.ktmresource.greendux_ingot": "绿精锭",
   "item.ktmresource.indigo_ingot": "靛蓝锭",
@@ -188,6 +190,7 @@
   "tooltip.ktmresource.token_ofsilver": "一种在厄尔达斯大陆流通的中阶货币",
   "tooltip.ktmresource.token_ofsunkensoul": "这块代币上有着航海者先驱们那微弱的遗愿",
   "tooltip.ktmresource.simpleblueprint": "一张简易的蓝图模板",
+  "tooltip.ktmresource.sword_template": "一把简易的剑类武器模板",
 
   "desc.ktmresource.vanilla_scythes": "镰刀比起剑类武器能同时攻击更多敌人",
   "desc.ktmresource.vanilla_tangswords": "非常锐利的武器，拥有别具一格的破甲能力",
@@ -240,10 +243,10 @@
   "desc.ktmresource.demonicsword_gram": "——赤红色的双手魔剑，其装备等级之高让各路高手都望尘莫及。取名来自北欧神话中的屠龙之剑",
   "desc.ktmresource.ebon_dagger": "——一把暗色的短剑，剑柄是由一种特殊木材混合制作而成的。由于轻便性深受旅者们的青睐",
   "desc.ktmresource.lambent_light": "——精致到令人称之为杰作的突刺武器，非常适合身手敏捷的使用者。由于是手工锻造武器，它的隐藏稀有程度远超同类别武器",
-  "desc.ktmresource.bladeof_greed":"——哥布林大军为兽人打造了一把坚韧无比的巨剑，一般人无法轻易挥舞这把武器，不过或许，某些力量型战士可以突破这个限制？……",
-  "desc.ktmresource.frost_piercer":"——寒冷气息缠身的战戟，表面充满着科技感的要素。由于这把武器的精密构造，锻造时一个完善的设计图必不可缺",
-  "desc.ktmresource.claudias_crystalgreatsword":"——这把巨剑是古时一位女骑士的遗物，没有作为陪葬品的它就这么遗落在了这片大陆之中。根据记载，剑上的宝石与符文使得使用者能与月之精灵沟通",
-  "desc.ktmresource.faringstar_blade":"——传奇刀匠奥勒通的杰作之一，如果有人质疑过去星河时代的伟业，在这把剑身上散发的异相星辉之力正是最好的证明。「愿人们永不忘记那段历史……」",
+  "desc.ktmresource.bladeof_greed": "——哥布林大军为兽人打造了一把坚韧无比的巨剑，一般人无法轻易挥舞这把武器，不过或许，某些力量型战士可以突破这个限制？……",
+  "desc.ktmresource.frost_piercer": "——寒冷气息缠身的战戟，表面充满着科技感的要素。由于这把武器的精密构造，锻造时一个完善的设计图必不可缺",
+  "desc.ktmresource.claudias_crystalgreatsword": "——这把巨剑是古时一位女骑士的遗物，没有作为陪葬品的它就这么遗落在了这片大陆之中。根据记载，剑上的宝石与符文使得使用者能与月之精灵沟通",
+  "desc.ktmresource.faringstar_blade": "——传奇刀匠奥勒通的杰作之一，如果有人质疑过去星河时代的伟业，在这把剑身上散发的异相星辉之力正是最好的证明。「愿人们永不忘记那段历史……」",
   "desc.ktmresource.razor_edge": "——一把古久的国宝级武器，有传言说它来自一个已经灭亡的国家，剑刃锋利的程度可以像切纸一样切开铠甲。至于这是否是一件被魔法附魔过的武器，真相则不得而知了……",
   "desc.ktmresource.shadowof_yggdrasil": "——武器名诉说着它曾是传说中世界树的一根树枝。这把法杖不仅拥有能疏导与汇聚魔力的力量，那出奇的重量还使得它能轻松的敲碎人类的头骨",
   "desc.ktmresource.spuit_lance": "——由至尊打造的神器级武器，是一把外形颇为奇特的长枪，能力是攻击造成伤害的百分比来治疗使用者自身。面对拿着这把武器的敌人，颤栗吧，因为你将面对真正的恐怖……",

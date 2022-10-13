@@ -11,6 +11,7 @@ import java.util.function.Supplier;
 public enum KtmItemTier implements Tier {
 
     // Customize
+    TEMPLATE(0, 200, 0f, 1f, 0, () -> Ingredient.of(Items.IRON_INGOT)),
     BASIC(0, 59, 0f, 4f, 15, () -> Ingredient.EMPTY),
     ADVANCED(0, 1400, 0f, 10f, 15, () -> Ingredient.of(KtmItems.ADVANCED_REPAIRKIT.get())),
     ELITE(0, 1200, 0f, 15f, 15, () -> Ingredient.of(KtmItems.ADVANCED_REPAIRKIT.get())),

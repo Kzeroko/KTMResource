@@ -12,6 +12,7 @@ import net.kzeroko.ktmresource.items.custom.ingots.*;
 import net.kzeroko.ktmresource.items.custom.misc.*;
 import net.kzeroko.ktmresource.items.custom.repairkits.*;
 import net.kzeroko.ktmresource.items.custom.weapons.*;
+import net.kzeroko.ktmresource.items.custom.weapons.template.SwordTemplate;
 import net.kzeroko.ktmresource.items.custom.weapons.vanilla.VanillaCurvedswords;
 import net.kzeroko.ktmresource.items.custom.weapons.vanilla.VanillaScythes;
 import net.kzeroko.ktmresource.items.custom.weapons.vanilla.VanillaTangswords;
@@ -432,6 +433,10 @@ public class KtmItems {
 
     public static final RegistryObject<Item> BLUEPRINT_WEAPON = ITEMS.register("blueprint_weapon",
             () -> new SimpleBlueprint(new Item.Properties().tab(KtmItemTab.KTMRESOURCES).rarity(KtmItemRarity.OUTER)));
+
+    public static final RegistryObject<Item> SWORD_TEMPLATE = ITEMS.register("sword_template",
+            () -> new SwordTemplate(KtmItemTier.TEMPLATE, -1, -2.6f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).rarity(KtmItemRarity.OUTER)));
 
     // Tier 3 Ingot Items
 

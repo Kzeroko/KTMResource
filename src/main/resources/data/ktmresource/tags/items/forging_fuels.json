@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "minecraft:coal",
-    "minecraft:gold_ingot"
+    "minecraft:blaze_powder",
+    "ktmresource:blueprint_weapon",
+    "ktmresource:steel_compound"
   ]
 }
