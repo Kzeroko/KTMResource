@@ -23,16 +23,18 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.ForgeRegistryEntry;
 
 import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ForgingRecipe implements IForgingRecipe {
     private final ResourceLocation recipeId;
     private final NonNullList<Ingredient> catalysts;
     private final NonNullList<Ingredient> recipeGems;
-    private final NonNullList<Pair<Enchantment,Integer>> enchantments;
+    private final List<Pair<Enchantment,Integer>> enchantments;
     private final ItemStack result;
     public Integer forgingTime;
 
-    public ForgingRecipe(ResourceLocation recipeId, NonNullList<Ingredient> catalysts, NonNullList<Ingredient> recipeGems, NonNullList<Pair<Enchantment,Integer>> enchantments, ItemStack result, Integer forgingTime) {
+    public ForgingRecipe(ResourceLocation recipeId, NonNullList<Ingredient> catalysts, NonNullList<Ingredient> recipeGems, List<Pair<Enchantment,Integer>> enchantments, ItemStack result, Integer forgingTime) {
         this.recipeId = recipeId;
         this.catalysts = catalysts;
         this.recipeGems = recipeGems;
@@ -164,7 +166,7 @@ public class ForgingRecipe implements IForgingRecipe {
             NonNullList<Ingredient> gemList = readIngredients(GsonHelper.getAsJsonArray(json, "gems"));
             // could they use the same procedure? seem ok since no specific codes were used.
             NonNullList<Ingredient> catalystList = readIngredients(GsonHelper.getAsJsonArray(json, "catalysts"));
-            NonNullList<Pair<Enchantment,Integer>> enchantmentList = readEnchantments(GsonHelper.getAsJsonArray(json, "enchantments"));
+            List<Pair<Enchantment,Integer>> enchantmentList = readEnchantments(GsonHelper.getAsJsonArray(json, "enchantments"));
 
             if (gemList.isEmpty()) {
                 throw new JsonParseException("No gems for forging recipe");
@@ -195,8 +197,8 @@ public class ForgingRecipe implements IForgingRecipe {
             return nonnulllist;
         }
 
-        private static NonNullList<Pair<Enchantment,Integer>> readEnchantments(JsonArray enchantmentArray) {
-            NonNullList<Pair<Enchantment,Integer>> enchantments = NonNullList.create();
+        private static List<Pair<Enchantment,Integer>> readEnchantments(JsonArray enchantmentArray) {
+            List<Pair<Enchantment,Integer>> enchantments = new ArrayList<>();
 
             for(int i = 0; i < enchantmentArray.size(); ++i) {
                 Enchantment enchantment = parseEnchantment(GsonHelper.convertToJsonObject(enchantmentArray.get(i),"enchantment"));
@@ -245,11 +247,9 @@ public class ForgingRecipe implements IForgingRecipe {
                 catalystList.set(j, Ingredient.fromNetwork(buffer));
             }
 
-            // TBD
-            // this part should be deleted
-            // where does this saved?
+            // read enchantments
             int k = buffer.readVarInt();
-            NonNullList<Pair<Enchantment,Integer>> enchantmentList = NonNullList.create();
+            List<Pair<Enchantment,Integer>> enchantmentList = new ArrayList<>();
 
             for (int j = 0; j < k; j++) {
                 Enchantment enchantment = ForgeRegistries.ENCHANTMENTS.getValue(buffer.readResourceLocation());
@@ -272,16 +272,17 @@ public class ForgingRecipe implements IForgingRecipe {
                 ingredient.toNetwork(buffer);
             }
 
-            buffer.writeVarInt(recipe.enchantments.size());
-            for(Pair<Enchantment,Integer> enchantment : recipe.enchantments) {
-                buffer.writeResourceLocation(enchantment.getFirst().getRegistryName());
-                buffer.writeVarInt(enchantment.getSecond());
-            }
-
             // save fuels
             buffer.writeVarInt(recipe.catalysts.size());
             for(Ingredient ingredient : recipe.catalysts) {
                 ingredient.toNetwork(buffer);
+            }
+
+            // save enchantments
+            buffer.writeVarInt(recipe.enchantments.size());
+            for(Pair<Enchantment,Integer> enchantment : recipe.enchantments) {
+                buffer.writeResourceLocation(enchantment.getFirst().getRegistryName());
+                buffer.writeVarInt(enchantment.getSecond());
             }
 
             buffer.writeItem(recipe.result);

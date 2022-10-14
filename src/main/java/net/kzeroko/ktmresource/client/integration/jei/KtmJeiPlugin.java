@@ -15,7 +15,6 @@ import net.minecraft.world.item.crafting.Recipe;
 import java.util.Collection;
 import java.util.List;
 
-// unused?
 @JeiPlugin
 public class KtmJeiPlugin implements IModPlugin {
     private static final ResourceLocation UID = new ResourceLocation(KTMResource.MOD_ID, "jei_main");
@@ -24,7 +23,7 @@ public class KtmJeiPlugin implements IModPlugin {
     public ResourceLocation getPluginUid() {
         return UID;
     }
-    
+
     @Override
     public void registerCategories(IRecipeCategoryRegistration registration) {
         registration.addRecipeCategories(new AlloyFurnaceRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
