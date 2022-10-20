@@ -42,4 +42,10 @@ public class KtmItemTab {
         public ItemStack makeIcon() { return new ItemStack(KtmItems.OICON_ELF.get());
         }
     };
+
+    public static final CreativeModeTab KTMOFOODS = new CreativeModeTab("ktmfoodsTab") {
+        @Override
+        public ItemStack makeIcon() { return new ItemStack(KtmItems.DRAGONFLESH_SANDWICH.get());
+        }
+    };
 }

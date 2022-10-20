@@ -7,8 +7,8 @@ modId="ktmresource"
 version="${file.jarVersion}"
 displayName="KTM Resource"
 logoFile="logo.png"
-credits="Kzeroko, Qma_Feng, xiao_lanovo"
-authors="Kzeroko"
+credits="Kzeroko, Qma_Feng, xiao_lanovo, Xiu_Jia"
+authors="Kzeroko, Qma_Feng"
 description='''
 Custom items, blocks and fluids for modpack KTM:PhantasmReality
 Which is a sequel to modpack KTM
@@ -37,6 +37,13 @@ KTM=KenToMahou (Swords and Magic)
     versionRange="[18.3.1,18.4.0)"
     ordering="BEFORE"
     side="BOTH"
+
+[[dependencies.ktmresource]]
+    modId = "farmersdelight"
+    mandatory = true
+    versionRange = "[1.1.2,)"
+    ordering = "AFTER"
+    side = "BOTH"
 
 [modproperties.ktmresource]
     catalogueImageIcon="icon.png"

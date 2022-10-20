@@ -105,6 +105,9 @@ dependencies {
     runtimeOnly fg.deobf("mezz.jei:jei-${config.MINECRAFT_VERSION}:${config.JEI_VERSION}")
 
     implementation fg.deobf("curse.maven:epicfightmod-405076:4018756")
+
+    implementation fg.deobf("curse.maven:farmersdelight-398521:3999153")
+    runtimeOnly fg.deobf("curse.maven:appleskin-248787:3686482")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.

@@ -1,0 +1,36 @@
+{
+  "type": "ktmresource:forging_recipe",
+  "gems": [
+    {
+      "item": "ktmresource:sword_template"
+    },
+    {
+      "item": "ktmresource:cyadia_ingot"
+    },
+    {
+      "item": "ktmresource:indigo_ingot"
+    },
+    {
+      "item": "alltheores:sapphire"
+    },
+    {
+      "item": "alltheores:diamond_rod"
+    }
+  ],
+  "catalysts": [
+    {
+      "item": "ktmresource:blueprint_weapon"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "ktmresource:steel_compound"
+    }
+  ],
+  "result": {
+    "item": "ktmresource:blue_longsword"
+  },
+  "enchantments": [],
+  "forgingTime": 6600
+}

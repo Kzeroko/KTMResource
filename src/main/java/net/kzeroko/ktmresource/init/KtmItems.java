@@ -22,6 +22,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import vectorwing.farmersdelight.common.item.ConsumableItem;
+import vectorwing.farmersdelight.common.item.DrinkableItem;
 
 import java.util.function.Supplier;
 
@@ -227,6 +229,10 @@ public class KtmItems {
     public static final RegistryObject<Item> TOHKAS_SANDALPHON = ITEMS.register("tohkas_sandalphon",
             () -> new TohkasSandalphon(KtmItemTier.ANOTHER, 5, -2.7f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.ADVANCED)));
+
+    public static final RegistryObject<Item> SER_VERESTA = ITEMS.register("ser_veresta",
+            () -> new SerVeresta(KtmItemTier.ANOTHER, 7, -2.8f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.MONSTROUS)));
 
     // Weapons - legendary
 
@@ -591,6 +597,23 @@ public class KtmItems {
 
     public static final RegistryObject<Item> OICON_DEMON = ITEMS.register("oicon_demon",
             () -> new Item(new Item.Properties().tab(KtmItemTab.KTMOICONS).rarity(KtmItemRarity.FORBIDDEN)));
+
+    // Foods (Direct port at the moment)
+
+    public static final RegistryObject<Item> BLOOD_SLIMEDRINK = ITEMS.register("blood_slimedrink",
+            () -> new DrinkableItem(new Item.Properties().food(KtmFoods.SLIMEDRINK).craftRemainder(Items.GLASS_BOTTLE).stacksTo(16).tab(KtmItemTab.KTMOFOODS), true, false));
+    public static final RegistryObject<Item> ENDER_SLIMEDRINK = ITEMS.register("ender_slimedrink",
+            () -> new DrinkableItem(new Item.Properties().food(KtmFoods.SLIMEDRINK).craftRemainder(Items.GLASS_BOTTLE).stacksTo(16).tab(KtmItemTab.KTMOFOODS), true, false));
+    public static final RegistryObject<Item> ICHOR_SLIMEDRINK = ITEMS.register("ichor_slimedrink",
+            () -> new DrinkableItem(new Item.Properties().food(KtmFoods.SLIMEDRINK).craftRemainder(Items.GLASS_BOTTLE).stacksTo(16).tab(KtmItemTab.KTMOFOODS), true, false));
+    public static final RegistryObject<Item> SKY_SLIMEDRINK = ITEMS.register("sky_slimedrink",
+            () -> new DrinkableItem(new Item.Properties().food(KtmFoods.SLIMEDRINK).craftRemainder(Items.GLASS_BOTTLE).stacksTo(16).tab(KtmItemTab.KTMOFOODS), true, false));
+
+    public static final RegistryObject<Item> DRAGONFLESH_SANDWICH = ITEMS.register("dragonflesh_sandwich",
+            () -> new Item(new Item.Properties().food(KtmFoods.DRAGONFLESH_SANDWICH).tab(KtmItemTab.KTMOFOODS)));
+
+    public static final RegistryObject<Item> PIXIESOUL_STEW = ITEMS.register("pixiesoul_stew",
+            () -> new ConsumableItem(new Item.Properties().food(KtmFoods.PIXIESOUL_STEW).craftRemainder(Items.BOWL).stacksTo(16).tab(KtmItemTab.KTMOFOODS), true));
 
     // Activators
     public static final RegistryObject<Item> ACTIVATORS_A = registerItem("activator_a", ForgingActivators::new);
