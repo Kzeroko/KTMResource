@@ -57,6 +57,7 @@
   "item.ktmresource.hf_muramasa": "High-Frequency Muramasa",
   "item.ktmresource.tohkas_sandalphon": "Sandalphon",
   "item.ktmresource.ser_veresta": "Ser-Veresta",
+  "item.ktmresource.charons_guidance": "Charon's Guidance",
 
   "item.ktmresource.core": "Core",
   "item.ktmresource.cast_iron_dust": "Cast Iron Dust",
@@ -257,6 +258,7 @@
   "desc.ktmresource.hf_muramasa": "——The treasured sword that has been passed down from generation to generation, inherits the user's will to fight, which makes the value of this sword go to a higher level\n§4「The only thing I know for real! There will be blood! Shed!」",
   "desc.ktmresource.tohkas_sandalphon": "——A mysterious greatsword in the throne, it was summoned by an unknown force. The secret power of this sword can only be exerted by the true owner of this sword\n§d「Adonai Melek·Princess」",
   "desc.ktmresource.ser_veresta": "——An Orga-Lux that has the ability to decompose any object slashed by its flaming blade, it is known as one of the Four Colored Magic Swords\n§d「Maybe this lightsaber has its own consciousness?...」",
+  "desc.ktmresource.charons_guidance": "——This war-scythe resembles a cross-shaped spear, which contains the power of death within. To use this forbidden power seems to require the activation of a special ability...",
 
   "item.ktmresource.blood_slimedrink": "Blood Slimedrink",
   "item.ktmresource.ender_slimedrink": "Ender Slimedrink",

@@ -204,6 +204,10 @@ public class KtmItems {
             () -> new SpuitLance(KtmItemTier.MYTHICAL, -1, -2.5f,
                     new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.MONSTROUS)));
 
+    public static final RegistryObject<Item> CHARONS_GUIDANCE = ITEMS.register("charons_guidance",
+            () -> new CharonsGuidance(KtmItemTier.LEGENDARY, -9, -2.4f,
+                    new Item.Properties().tab(KtmItemTab.KTMWEAPONS).fireResistant().rarity(KtmItemRarity.MONSTROUS)));
+
     // Weapons - another
 
     public static final RegistryObject<Item> UNMOVABLE_DAWNLIGHT = ITEMS.register("unmovable_dawnlight",

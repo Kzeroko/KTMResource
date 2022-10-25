@@ -57,6 +57,7 @@
   "item.ktmresource.hf_muramasa": "高频村雨刀",
   "item.ktmresource.tohkas_sandalphon": "鏖杀公",
   "item.ktmresource.ser_veresta": "黑炉魔剑",
+  "item.ktmresource.charons_guidance": "卡戎的引导",
 
   "item.ktmresource.core": "核心",
   "item.ktmresource.cast_iron_dust": "铸铁粉",
@@ -257,6 +258,7 @@
   "desc.ktmresource.hf_muramasa": "——代代相传的宝刀，其上继承了使用者战斗的意志，使得这把刀的价值又上身了一个层次\n§4「我仅确信一事，此地将证鲜血纷飞四溅！」",
   "desc.ktmresource.tohkas_sandalphon": "——王座中的神秘大剑，被未知力量所呼唤而显现。这把剑的未知权能只有这把剑真正的主人才能发挥出来\n§d「灵装十番·公主」",
   "desc.ktmresource.ser_veresta": "——一把珍贵的纯星煌式武装，其高热能的刀刃有能力分解其斩击的物体，被誉为四色魔剑之一\n§d「这把光剑或许拥有自己的意识？……」",
+  "desc.ktmresource.charons_guidance": "——长相颇像十字枪的镰刀，这把武器其中蕴含着死亡的力量。想要运用这股禁忌的力量似乎需要启动某种特殊能力……",
 
   "item.ktmresource.blood_slimedrink": "黏血饮品",
   "item.ktmresource.ender_slimedrink": "末影黏液饮品",
